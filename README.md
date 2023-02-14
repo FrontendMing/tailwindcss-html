@@ -8,7 +8,7 @@
 ## 收益
 - 1、用工程化的方式写页面，修改样式等实时更新
 - 2、引入 tailwindcss，基本可以做到不手写样式
-- 3、按需打包。tailwindcss内置可能有几万个class，打包时只会打包项目中用到的class类
+- 3、按需打包。tailwindcss 可能内置有几万个 class，打包时只会打包项目中用到的 class 类
 
 ## 不足
 - tailwindcss 自定义的 class 类，px 单位不能转为 vw ，需要手动计算
