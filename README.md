@@ -1,7 +1,14 @@
 # Tailwindcss HTML
+
+## 目标
 - 使用 tailwindcss 写 html 页面，提高页面输出效率  
 - 页面写完后，用打包命令打包，得到打包后的 js、css 等文件  
 - 静态资源文件，放在 public 文件夹下即可
+
+## 好处
+- 1、用工程化的方式写页面，修改样式等实时更新
+- 2、引入 tailwindcss，基本可以做到不手写样式
+- 3、按需打包。tailwindcss内置可能有几万个class，打包时只会打包项目中用到的class类
 
 
 ### 本地开发
