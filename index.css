@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #FD5000;  /* 系统主题色 */
+  --text-black: #000;
+  --text-main-color: #333;  /* 标题、主要文本颜色 */
+  --text-sub-color: #666;  /* 常规、次要按钮颜色 */
+  --text-info-color: #999;  /* 副文案、辅助说明信息 */
+  --text-disable-color: #ccc;  /* 弱文案、失效、不可点 */
+  --input-border-color: #ddd;  /* 输入框、选择边框 */
+  --gap: 20PX;  /* 通用边距和距离 */
+  --radius: 12PX;  /* 通用圆角 */
+  --border-primary: 2PX solid #FD5000;  /* 主题边框线和颜色 */
+  --border-grey: 1PX solid #ccc;  /* 次要边框线和颜色 */
+  --normal-color: #fff;
+  --border-color-link: 1PX solid #ddd;
+
+  /* 字体大小 */
+  --text-base-size: 18PX;  /* 大写 PX 是为了不被插件转义成 vw */
+  --text-xs-size: 14PX;
+  --text-sm-size: 24PX;
+  --text-lg-size: 26PX;
+  --text-xl-size: 36PX;
+  --text-2xl-size: 45PX;
+  --text-3xl-size: 70PX;
+
+  /* 行高 */
+  --leading-base: 27PX;
+  --leading-xs: 21PX;
+  --leading-sm: 36PX;
+  --leading-lg: 39PX;
+  --leading-xl: 54PX;
+  --leading-2xl: 66PX;
+  --leading-3xl: 70PX;
+}
+
+/* 移动端 */
+@media screen and (max-width: 768px) {
+  :root {
+    /* 字体大小 */
+    --text-base-size: 3.8vw;
+    --text-xs-size: 2.66667vw;
+    --text-sm-size: 3.8vw;
+    --text-lg-size: 4.26667vw;
+    --text-xl-size: 4.8vw;
+    --text-2xl-size: 6vw;
+    --text-3xl-size: 7.33333vw;
+
+    /* 行高 */
+    --leading-base: 5.2vw;
+    --leading-xs: 4vw;
+    --leading-sm: 4.8vw;
+    --leading-lg: 6.4vw;
+    --leading-xl: 7.2vw;
+    --leading-2xl: 8.8vw;
+    --leading-3xl: 8vw;
+  }
+}
