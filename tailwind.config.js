@@ -9,6 +9,7 @@ module.exports = {
           sub: "var(--text-sub-color)",
           info: "var(--text-info-color)",
           disable: "var(--text-disable-color)",
+          input: "var(--input-border-color)",
         },
         height: {
           screen: "var(--screen-height, 100vh)",
