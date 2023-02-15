@@ -48,9 +48,10 @@ yarn build
 │   ├── choose-appliances      # choose appliances 片段
 │   │   ├── index.html
 │   │   └── index.js
-│   └── choose-scenarios       # choose scenarios 片段
-│       ├── index.html
-│       └── index.js
+│   ├── choose-scenarios       # choose scenarios 片段
+│   │   ├── index.html
+│   │   └── index.js
+│   └── ...                    # 更多片段
 ├── index.css                  # 页面 css（公共）
 ├── index.html                 # 页面 html
 ├── index.js                   # 页面 js
