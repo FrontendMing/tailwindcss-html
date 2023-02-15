@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "Use Tailwindcss to write HTML",
+  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build:watch": "vite build --watch",

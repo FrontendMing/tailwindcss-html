@@ -2,6 +2,7 @@
 import postcssPxToViewport8Plugin from 'postcss-px-to-viewport-8-plugin'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -31,5 +32,14 @@ export default defineConfig({
         autoprefixer({})
       ]
     }
-  }
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        index: resolve(__dirname, 'index.html'),
+        'choose-scenarios': resolve(__dirname, 'section/choose-scenarios/index.html'),
+        'choose-appliances': resolve(__dirname, 'section/choose-appliances/index.html'),
+      }
+    },
+  },
 })
