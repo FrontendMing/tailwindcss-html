@@ -52,6 +52,7 @@ yarn build
 │   │   ├── index.html
 │   │   └── index.js
 │   └── ...                    # 更多片段
+│
 ├── index.css                  # 页面 css（公共）
 ├── index.html                 # 页面 html
 ├── index.js                   # 页面 js
