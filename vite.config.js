@@ -39,6 +39,7 @@ export default defineConfig({
         index: resolve(__dirname, 'index.html'),
         'choose-scenarios': resolve(__dirname, 'section/choose-scenarios/index.html'),
         'choose-appliances': resolve(__dirname, 'section/choose-appliances/index.html'),
+        'choose-advantages': resolve(__dirname, 'section/choose-advantages/index.html'),
       }
     },
   },

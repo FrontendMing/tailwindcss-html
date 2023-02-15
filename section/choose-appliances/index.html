@@ -9,12 +9,148 @@
 <body>
     
     <!-- title -->
-    <h2
-      class="
-        w-full text-center text-2xl lg:text-xl text-black lg:text-main
-        px-[8vw] lg:px-0 pt-10 pb-5 bg-white lg:bg-[#F5F5F5]
-        font-semibold lg:font-medium
-      ">What appliances will you power?</h2>
+    <div class="w-full px-[8vw] lg:px-0 pt-10 pb-5 bg-white lg:bg-[#F5F5F5]">
+        <h2 class="w-full max-w-[1200px] mx-auto flex flex-col items-end lg:items-center lg:flex-none text-center relative">
+            <span class="text-2xl lg:text-xl text-black lg:text-main font-semibold lg:font-medium">What appliances will you power?</span>
+            <button
+                class="
+                    w-fit text-primary font-light lg:font-normal text-[3.2vw] leading-[4.8vw] lg:text-[24px] lg:leading-[36px]
+                    relative lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2
+                    after:absolute after:block after:w-full after:h-[2px] after:bg-primary
+                ">Clear All</button>
+        </h2>
+    </div>
+
+    <div class="bg-[#F5F5F5]">
+        <ul class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[20px] gap-y-[3.3333333333333335vw] lg:gap-y-[16px] p-[8vw] lg:px-10 lg:py-5">
+            <li class="flex items-center justify-between bg-white p-[5.333333333333333vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
+                <label class="flex-1 flex items-center cursor-pointer" for="1">
+                    <img class="w-[9.333333333333334vw] h-[9.333333333333334vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
+                    <div class="flex flex-col ml-[5.066666666666666vw] lg:ml-5">
+                        <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
+                        <p class="text-[3.2vw] leading-[4.8vw] lg:text-xs font-medium text-info">80W/6h/day</p>
+                    </div>
+                </label>
+                <div class="flex">
+                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <input
+                        type="checkbox" id="1"
+                        class="
+                            appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
+                            border border-info border-solid cursor-pointer
+                            checked:bg-primary checked:border-primary
+                        "/>
+                </div>
+            </li>
+            <li class="flex items-center justify-between bg-white p-[5.333333333333333vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
+                <label class="flex-1 flex items-center cursor-pointer" for="2">
+                    <img class="w-[9.333333333333334vw] h-[9.333333333333334vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
+                    <div class="flex flex-col ml-[5.066666666666666vw] lg:ml-5">
+                        <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
+                        <p class="text-[3.2vw] leading-[4.8vw] lg:text-xs font-medium text-info">80W/6h/day</p>
+                    </div>
+                </label>
+                <div class="flex">
+                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <input
+                        type="checkbox" id="2"
+                        class="
+                            appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
+                            border border-info border-solid cursor-pointer
+                            checked:bg-primary checked:border-primary
+                        "/>
+                </div>
+            </li>
+            <li class="flex items-center justify-between bg-white p-[5.333333333333333vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
+                <label class="flex-1 flex items-center cursor-pointer" for="3">
+                    <img class="w-[9.333333333333334vw] h-[9.333333333333334vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
+                    <div class="flex flex-col ml-[5.066666666666666vw] lg:ml-5">
+                        <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
+                        <p class="text-[3.2vw] leading-[4.8vw] lg:text-xs font-medium text-info">80W/6h/day</p>
+                    </div>
+                </label>
+                <div class="flex">
+                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <input
+                        type="checkbox" id="3"
+                        class="
+                            appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
+                            border border-info border-solid cursor-pointer
+                            checked:bg-primary checked:border-primary
+                        "/>
+                </div>
+            </li>
+            <li class="flex items-center justify-between bg-white p-[5.333333333333333vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
+                <label class="flex-1 flex items-center cursor-pointer" for="4">
+                    <img class="w-[9.333333333333334vw] h-[9.333333333333334vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
+                    <div class="flex flex-col ml-[5.066666666666666vw] lg:ml-5">
+                        <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
+                        <p class="text-[3.2vw] leading-[4.8vw] lg:text-xs font-medium text-info">80W/6h/day</p>
+                    </div>
+                </label>
+                <div class="flex">
+                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <input
+                        type="checkbox" id="4"
+                        class="
+                            appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
+                            border border-info border-solid cursor-pointer
+                            checked:bg-primary checked:border-primary
+                        "/>
+                </div>
+            </li>
+            <li class="flex items-center justify-between bg-white p-[5.333333333333333vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
+                <label class="flex-1 flex items-center cursor-pointer" for="5">
+                    <img class="w-[9.333333333333334vw] h-[9.333333333333334vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
+                    <div class="flex flex-col ml-[5.066666666666666vw] lg:ml-5">
+                        <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
+                        <p class="text-[3.2vw] leading-[4.8vw] lg:text-xs font-medium text-info">80W/6h/day</p>
+                    </div>
+                </label>
+                <div class="flex">
+                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <input
+                        type="checkbox" id="5"
+                        class="
+                            appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
+                            border border-info border-solid cursor-pointer
+                            checked:bg-primary checked:border-primary
+                        "/>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="fixed-popup" class="w-full bg-white lg:bg-[#F5F5F5] overflow-hidden fixed bottom-0 left-0 pt-[3.3333333333333335vw] pb-[20vw] px-[8vw] lg:py-0 lg:static">
+        <div
+            class="
+                max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2
+                lg:gap-x-[20px] lg:pl-10 pb-[6.666666666666667vw] lg:pb-5
+            ">
+            <p
+                class="
+                    text-[2.6666666666666665vw] leading-[4vw] text-info
+                    lg:text-base lg:text-main font-normal order-2 lg:order-1
+                    text-center lg:text-left scale-[0.8333333333333334]
+                "
+            >*Total Energy Consumpation is for reference only, please refer to your actual daily electrical consumption.</p>
+            <p
+                class="
+                    flex items-center flex-col lg:flex-row
+                    justify-end order-1 lg:order-2
+                    text-[3.466666666666667vw] leading-[6.4vw]
+                    lg:text-base text-main lg:text-sub
+                    font-medium lg:font-normal
+                "
+            >Total Energy Consumption Per Day:<span class="text-lg font-bold text-main ml-5">0.72Wh/day</span></p>
+        </div>
+    
+        <div class="w-full flex items-center justify-center gap-[4vw] lg:gap-6 lg:my-[30px]">
+            <!-- 按钮无需处理 -->
+            <a href="" class="w-full lg:w-fit block flex-1 text-center lg:flex-none">BACK</a>
+            <a href="" class="w-full lg:w-fit block flex-1 text-center lg:flex-none">NEXT</a>
+        </div>
+    </div>
 
     <script type="module" src="./index.js"></script>
 </body>
