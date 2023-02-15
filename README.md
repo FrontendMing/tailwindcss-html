@@ -20,26 +20,6 @@
 > PC 端设计稿尺寸是 1920 像素，则 70/19.2 = 3.6458333333333335 ；那么 `text-[70px]` 就得写成 `text-[3.6458333333333335vw]`
 
 
-### 本地开发
-
-```
-第一步: yarn install 或者 yarn
-第二步: yarn dev
-```
-
-### 打包
-```
-yarn build
-```
-
-
-> 使用如下命令(需要开2个终端)，可以在开发的同时，实时更新打包后的文件
-```
-终端一: yarn dev
-终端二: yarn build:watch
-```
-
-
 ## 项目结构说明
 ```
 ├── public                     # 项目公共静态资源目录
@@ -60,3 +40,27 @@ yarn build
 ├── tailwind.config.js         # tailwindcss 配置
 └── vite.config.js             # 项目打包配置
 ```
+
+
+
+### 本地开发
+
+```
+第一步: yarn install 或者 yarn
+第二步: yarn dev
+```
+
+### 打包
+```
+yarn build
+```
+
+
+> 使用如下命令(需要开2个终端)，可以在开发的同时，实时更新打包后的文件
+```
+终端一: yarn dev
+终端二: yarn build:watch
+```
+
+
+
