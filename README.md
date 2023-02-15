@@ -3,6 +3,7 @@
 ## 目标
 - 使用 tailwindcss 写 html 页面，提高页面输出效率  
 - 页面写完后，用打包命令打包，得到打包后的 js、css 等文件  
+- 支持多页面入口，一并打包，打包后得到各个页面的 html、js、css 文件
 - 静态资源文件，放在 public 文件夹下即可
 
 ## 收益
@@ -14,6 +15,7 @@
 - tailwindcss 自定义的 class 类，px 单位不能转为 vw ，需要手动计算
 > 如 `text-[56px] lg:text-[70px]`，表示字体在移动端（按750像素）显示为 56px , 在 pc 端显示为 70px  
 > 但 `px 自动转 vw 插件`无法识别，需要自己手动计算。  
+>  
 > 移动端设计稿尺寸是 750 像素，则 56/7.5 = 7.466666666666667 ；那么 `text-[56px]` 就得写成 `text-[7.466666666666667vw]`  
 > PC 端设计稿尺寸是 1920 像素，则 70/19.2 = 3.6458333333333335 ；那么 `text-[70px]` 就得写成 `text-[3.6458333333333335vw]`
 
@@ -42,9 +44,16 @@ yarn build
 ```
 ├── public                     # 项目公共静态资源目录
 │   └── img                    # 静态图片目录
-├── index.css                  # 页面css
-├── index.html                 # 页面html
-├── index.js                   # 页面js
+├── section                    # 页面片段部分
+│   ├── choose-appliances      # choose appliances 片段
+│   │   ├── index.html
+│   │   └── index.js
+│   └── choose-scenarios       # choose scenarios 片段
+│       ├── index.html
+│       └── index.js
+├── index.css                  # 页面 css（公共）
+├── index.html                 # 页面 html
+├── index.js                   # 页面 js
 ├── package.json               # 项目包管理说明
 ├── tailwind.config.js         # tailwindcss 配置
 └── vite.config.js             # 项目打包配置
