@@ -40,6 +40,8 @@ export default defineConfig({
         'choose-scenarios': resolve(__dirname, 'section/choose-scenarios/index.html'),
         'choose-appliances': resolve(__dirname, 'section/choose-appliances/index.html'),
         'choose-advantages': resolve(__dirname, 'section/choose-advantages/index.html'),
+        'choose-combo': resolve(__dirname, 'section/choose-combo/index.html'),
+        'result': resolve(__dirname, 'section/result/index.html'),
       }
     },
   },

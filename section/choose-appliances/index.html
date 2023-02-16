@@ -13,6 +13,7 @@
         <h2 class="w-full max-w-[1200px] mx-auto flex flex-col items-end lg:items-center lg:flex-none text-center relative">
             <span class="text-2xl lg:text-xl text-black lg:text-main font-semibold lg:font-medium">What appliances will you power?</span>
             <button
+                id="clear-all"
                 class="
                     w-fit text-primary font-light lg:font-normal text-[3.2vw] leading-[4.8vw] lg:text-[24px] lg:leading-[36px]
                     relative lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2
@@ -21,7 +22,7 @@
         </h2>
     </div>
 
-    <div class="bg-[#F5F5F5]">
+    <div class="choose-appliances-wrap bg-[#F5F5F5]">
         <ul class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[20px] gap-y-[3.3333333333333335vw] lg:gap-y-[16px] p-[8vw] lg:px-10 lg:py-5">
             <li class="flex items-center justify-between bg-white p-[5.333333333333333vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
                 <label class="flex-1 flex items-center cursor-pointer" for="1">
@@ -121,7 +122,8 @@
         </ul>
     </div>
 
-    <div id="fixed-popup" class="w-full bg-white lg:bg-[#F5F5F5] overflow-hidden fixed bottom-0 left-0 pt-[3.3333333333333335vw] pb-[20vw] px-[8vw] lg:py-0 lg:static">
+    <!-- fixed bottom -->
+    <div id="fixed-appliance-popup" class="hidden lg:block w-full bg-white lg:bg-[#F5F5F5] overflow-hidden fixed bottom-0 left-0 pt-[3.3333333333333335vw] pb-[20vw] px-[8vw] lg:py-0 lg:static">
         <div
             class="
                 max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2

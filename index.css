@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* font-family */
+@font-face {
+  font-display: swap; font-family: 'Gilroy'; font-style: normal; font-weight: bold;
+  src: url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-bold.woff2?v=1670917251') format('woff2'), url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-bold.woff?v=1670917251') format('woff');
+}
+
+@font-face {
+  font-display: swap; font-family: 'Gilroy'; font-style: normal; font-weight: 700;
+  src: url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-semibold.woff2?v=1670917251') format('woff2'), url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-semibold.woff?v=1670917251') format('woff');
+}
+
+@font-face {
+  font-display: swap; font-family: 'Gilroy'; font-style: normal; font-weight: 500;
+  src: url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-medium.woff2?v=1670917251') format('woff2'), url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-medium.woff?v=1670917251') format('woff');
+}
+
+@font-face {
+  font-display: swap; font-family: 'Gilroy'; font-style: normal; font-weight: normal;
+  src: url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-light.woff2?v=1670917251') format('woff2'), url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-light.woff?v=1670917251') format('woff');
+}
+
+* {
+  font-family: 'Gilroy';
+}
+
 :root {
   --primary-color: #FD5000;  /* 系统主题色 */
   --text-black: #000;
