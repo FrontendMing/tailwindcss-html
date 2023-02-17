@@ -37,6 +37,7 @@
   --input-border-color: #ddd;  /* 输入框、选择边框 */
   --gap: 20PX;  /* 通用边距和距离 */
   --radius: 12PX;  /* 通用圆角 */
+  --raduis-sm: 8PX;  /* 移动端通用圆角 */
   --border-primary: 2PX solid #FD5000;  /* 主题边框线和颜色 */
   --border-grey: 1PX solid #ccc;  /* 次要边框线和颜色 */
   --normal-color: #fff;
@@ -93,6 +94,7 @@
 
 
     /* 新增 */
+    --raduis-sm: 1.06666666666667vw;  /* 移动端通用圆角 */
     --text-24-size: 3.2vw; /* 24px */
     --text-26-size: 3.466666666666667vw; /* 26px */
     --leading-36: 4.8vw; /* 36px */

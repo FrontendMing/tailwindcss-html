@@ -31,6 +31,7 @@ module.exports = {
           '39': "var(--leading-39)",
         },
         borderRadius: {
+          sm: "var(--raduis-sm)",
           DEFAULT: "var(--radius)",
         }
       },
