@@ -25,16 +25,12 @@ class Combo {
     }
     initTab(type, it) {
         if (type === 'portable') {
-            this.portablePowers.forEach(v => {
-                v.classList.remove('active')
-                it.classList.add('active')
-            })
+            this.portablePowers.forEach(v => v.classList.remove('active'))
+            it.classList.add('active')
         }
         if (type === 'solar') {
-            this.solarPanels.forEach(v => {
-                v.classList.remove('active')
-                it.classList.add('active')
-            })
+            this.solarPanels.forEach(v => v.classList.remove('active'))
+            it.classList.add('active')
         }
     }
 }

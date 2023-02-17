@@ -13,10 +13,8 @@ class Advantages {
         this.checkboxes.forEach(it => it.onclick = () => this.chooseAdvantage(it))
     }
     chooseAdvantage(it) {
-        this.checkboxes.forEach(v => {
-            v.checked = false
-            it.checked = true
-        })
+        this.checkboxes.forEach(v => v.checked = false)
+        it.checked = true
     }
 }
 

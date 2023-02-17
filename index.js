@@ -14,24 +14,20 @@ class HelpMeChoose{
         this.tabs.forEach(it => it.onclick = () => this.handleTabClick(it))
     }
     handleTabClick(it) {
+        this.tabs.forEach(v => v.classList.remove('active'))
+        it.classList.add('active')
+
         const mobileImg = it.getAttribute('data-mb-img')
         const pcImg = it.getAttribute('data-pc-img')
         const tabContentDom = document.querySelector('[data-tab-content]')
+        tabContentDom.innerHTML = `
+            <img class="block lg:hidden w-full object-cover" src="${mobileImg}" alt="">
+            <img class="hidden lg:block w-full object-cover" src="${pcImg}" alt="">
+        `
 
         const tab = it.dataset.tab
         const tabOthers = document.querySelector('[data-tab-others]')
         tabOthers.style.display = tab === 'others' ? 'block' : 'none'
-        
-
-        this.tabs.forEach(item => {
-            item.classList.remove('active')
-            it.classList.add('active')
-
-            tabContentDom.innerHTML = `
-                <img class="block lg:hidden w-full object-cover" src="${mobileImg}" alt="">
-                <img class="hidden lg:block w-full object-cover" src="${pcImg}" alt="">
-            `
-        })
     }
 }
 
