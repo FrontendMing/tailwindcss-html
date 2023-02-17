@@ -6,8 +6,8 @@ class Combo {
         this.DOM = (el && document.querySelector(el)) || {}
         this.fixedPopup = document.querySelector(fixedPopup)
 
-        this.portablePowers = this.DOM.querySelectorAll('[data-portable]')
-        this.solarPanels = this.DOM.querySelectorAll('[data-solar]')
+        this.portablePowers = this.DOM.querySelectorAll('[data-portable]') || []
+        this.solarPanels = this.DOM.querySelectorAll('[data-solar]') || []
 
         this.bodyWidth = document.body.clientWidth
         document.addEventListener('DOMContentLoaded', () => {

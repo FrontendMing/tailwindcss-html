@@ -3,8 +3,11 @@ import '../../index.css'
 class Advantages {
     constructor ({ el }) {
         this.DOM = (el && document.querySelector(el)) || {}
-        this.checkboxes = this.DOM.querySelectorAll('[type="checkbox"]')
-        this.init()
+        this.checkboxes = this.DOM.querySelectorAll('[type="checkbox"]') || []
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            this.init()
+        })
     }
     init() {
         this.checkboxes.forEach(it => it.onclick = () => this.chooseAdvantage(it))

@@ -8,14 +8,8 @@
   <body>
     <!-- banner -->
     <div class="relative flex items-center justify-center">
-      <img
-        class="hidden lg:block w-full object-cover"
-        src="./img/banner_pc.png" alt=""
-      >
-      <img
-        class="block lg:hidden w-full object-cover"
-        src="./img/banner_mb.png" alt=""
-      >
+      <img class="hidden lg:block w-full object-cover" src="./img/banner_pc.png" alt="">
+      <img class="block lg:hidden w-full object-cover" src="./img/banner_mb.png" alt="">
       <h1
         class="
           text-3xl lg:text-[3.6458333333333335vw] lg:leading-[3.6458333333333335vw]
@@ -65,7 +59,12 @@
 
     <!-- tabs -->
     <ul class="choose-scenarios-tabs w-full bg-white flex items-center justify-center gap-[8vw] lg:gap-[70px]">
-      <li class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group active">
+      <li
+        class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group active"
+        data-tab="outdoor"
+        data-mb-img="/img/tabs/outdoor_mb.png"
+        data-pc-img="/img/tabs/outdoor_pc.png"
+      >
         <span
           class="
             text-lg text-info lg:text-sub font-semibold lg:font-light 
@@ -78,7 +77,12 @@
             after:group-[.active]:bg-primary
           ">Outdoor</span>
       </li>
-      <li class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group">
+      <li
+        class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group"
+        data-tab="home"
+        data-mb-img="/img/tabs/home_mb.png"
+        data-pc-img="/img/tabs/home_pc.png"
+      >
         <span
           class="
             text-lg text-info lg:text-sub font-semibold lg:font-light 
@@ -91,7 +95,12 @@
             after:group-[.active]:bg-primary
           ">Home</span>
       </li>
-      <li class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group">
+      <li
+        class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group"
+        data-tab="working"
+        data-mb-img="/img/tabs/working_mb.png"
+        data-pc-img="/img/tabs/working_pc.png"
+      >
         <span
           class="
             text-lg text-info lg:text-sub font-semibold lg:font-light 
@@ -104,7 +113,12 @@
             after:group-[.active]:bg-primary
           ">Working</span>
       </li>
-      <li class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group">
+      <li
+        class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group"
+        data-tab="others"
+        data-mb-img="/img/tabs/others_mb.png"
+        data-pc-img="/img/tabs/others_pc.png"
+      >
         <span
           class="
             text-lg text-info lg:text-sub font-semibold lg:font-light 
@@ -121,9 +135,11 @@
 
     <!-- tab 内容 -->
     <div class="flex flex-col items-center justify-center lg:pt-5 lg:pb-10 bg-white lg:bg-[#F5F5F5]">
-      <div class="flex flex-col items-center justify-center w-full lg:w-[1200px] bg-white">
-        <img class="block lg:hidden w-full object-cover" src="/img/sence_mb.png" alt="">
-        <img class="hidden lg:block w-full object-cover" src="/img/sence_pc.png" alt="">
+      <div class="flex flex-col items-center justify-center bg-white">
+        <div class="w-screen h-[100vw] lg:w-[1200px] lg:h-[580px]" data-tab-content>
+          <img class="block lg:hidden w-full object-cover" src="/img/tabs/outdoor_mb.png" alt="">
+          <img class="hidden lg:block w-full object-cover" src="/img/tabs/outdoor_pc.png" alt="">
+        </div>
 
         <!-- 按钮无需处理 -->
         <a href="" class="block mt-[6.666666666666667vw] mb-[14vw] lg:my-6">NEXT</a>
@@ -134,11 +150,7 @@
     <div class="relative">
       <img class="block lg:hidden w-full object-cover" src="/img/compare_mb.png" alt="">
       <img class="hidden lg:block w-full object-cover" src="/img/compare_pc.png" alt="">
-      <div
-        class="
-          w-full flex flex-col items-center px-[17.866666666666667vw] lg:px-0
-          absolute top-[10.266666666666667vw] lg:top-[230px] left-0
-        ">
+      <div class="w-full flex flex-col items-center px-[17.866666666666667vw] lg:px-0 absolute top-[10.266666666666667vw] lg:top-[230px] left-0">
         <h2 class="text-white text-2xl font-medium text-center mb-[1.7333333333333334vw] lg:mb-[60px]">Would you like to compare for a decision?</h2>
 
         <!-- 按钮无需处理 -->

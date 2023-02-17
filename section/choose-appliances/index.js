@@ -4,7 +4,7 @@ class Appliances {
     constructor({ el, clearBtn, fixedPopup, }) {
         this.DOM = (el && document.querySelector(el)) || {}
         
-        this.checkboxes = this.DOM.querySelectorAll('input[type="checkbox"]')
+        this.checkboxes = this.DOM.querySelectorAll('input[type="checkbox"]') || []
         this.clearBtn = document.querySelector(clearBtn)
         this.fixedPopup = document.querySelector(fixedPopup)
 
