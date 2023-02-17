@@ -10,6 +10,7 @@ module.exports = {
           info: "var(--text-info-color)",
           disable: "var(--text-disable-color)",
           input: "var(--input-border-color)",
+          f0: "var(--bg-f0-color)",
           f5: "var(--bg-f5-color)",
         },
         height: {
