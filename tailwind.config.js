@@ -10,6 +10,7 @@ module.exports = {
           info: "var(--text-info-color)",
           disable: "var(--text-disable-color)",
           input: "var(--input-border-color)",
+          f5: "var(--bg-f5-color)",
         },
         height: {
           screen: "var(--screen-height, 100vh)",
@@ -22,6 +23,12 @@ module.exports = {
           xl: ["var(--text-xl-size)", "var(--leading-xl)"],
           '2xl': ["var(--text-2xl-size)", "var(--leading-2xl)"],
           '3xl': ["var(--text-3xl-size)", "var(--leading-3xl)"],
+          '24': "var(--text-24-size)",
+          '26': "var(--text-26-size)",
+        },
+        lineHeight: {
+          '36': "var(--leading-36)",
+          '39': "var(--leading-39)",
         },
         borderRadius: {
           DEFAULT: "var(--radius)",
@@ -29,7 +36,9 @@ module.exports = {
       },
     },
     variants: {
-      extend: {},
+      extend: {
+        50: ''
+      },
     },
     plugins: [
       require('@tailwindcss/line-clamp'),

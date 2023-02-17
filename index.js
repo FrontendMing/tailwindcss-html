@@ -18,6 +18,11 @@ class HelpMeChoose{
         const pcImg = it.getAttribute('data-pc-img')
         const tabContentDom = document.querySelector('[data-tab-content]')
 
+        const tab = it.dataset.tab
+        const tabOthers = document.querySelector('[data-tab-others]')
+        tabOthers.style.display = tab === 'others' ? 'block' : 'none'
+        
+
         this.tabs.forEach(item => {
             item.classList.remove('active')
             it.classList.add('active')

@@ -59,6 +59,15 @@
   --leading-xl: 54PX;
   --leading-2xl: 66PX;
   --leading-3xl: 70PX;
+
+
+  /* 新增 */
+  --bg-f5-color: #F5F5F5;  /* 背景色 */
+
+  --text-24-size: 24PX; 
+  --text-26-size: 26PX; 
+  --leading-36: 36PX;
+  --leading-39: 39PX;
 }
 
 /* 移动端 */
@@ -81,5 +90,12 @@
     --leading-xl: 7.2vw;
     --leading-2xl: 8.8vw;
     --leading-3xl: 8vw;
+
+
+    /* 新增 */
+    --text-24-size: 3.2vw; /* 24px */
+    --text-26-size: 3.466666666666667vw; /* 26px */
+    --leading-36: 4.8vw; /* 36px */
+    --leading-39: 5.2vw; /* 39px */
   }
 }
