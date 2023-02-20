@@ -225,7 +225,7 @@
             </div>
 
             <button
-              class="w-[206px] h-12 mt-[6.8vw] mb-[14vw] lg:my-6 bg-primary rounded-full border-2 border-primary border-solid text-lg text-white font-semibold"
+              class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 mt-[6.8vw] mb-[14vw] lg:my-6 bg-primary rounded-full border-2 border-primary border-solid text-lg text-white font-semibold"
               data-start-next
             >NEXT</button>
           </div>
@@ -509,11 +509,11 @@
     
             <div class="w-full flex items-center justify-center gap-[4vw] lg:gap-6 mt-[6.8vw] mb-[7.2vw] lg:mt-[30px] lg:mb-0">
               <button
-                class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
+                class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
                 data-question1-back
               >BACK</button>
               <button
-                class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold"
+                class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold"
                 data-question1-next
               >NEXT</button>
             </div>
@@ -654,7 +654,7 @@
         </div>
   
         <!-- fixed choosed popup -->
-        <div id="fixed-choosed-popup" class="hidden lg:block w-full bg-white lg:bg-f5 overflow-hidden fixed bottom-0 left-0 pt-[3.2vw] pb-[20vw] px-[8vw] lg:py-0 lg:static">
+        <div id="fixed-choosed-popup" class="hidden lg:block w-full bg-white lg:bg-f5 overflow-hidden fixed bottom-0 left-0 pt-[3.2vw] pb-[20vw] px-[8vw] lg:py-0 lg:static z-50">
           <div
               class="
                   max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2
@@ -680,18 +680,18 @@
       
           <div class="w-full flex items-center justify-center gap-[4vw] lg:gap-6 lg:my-[30px]">
               <button
-                class="w-full lg:w-[206px] h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
+                class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
                 data-question2-back
               >BACK</button>
               <button
-                class="w-full lg:w-[206px] h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold"
+                class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold"
                 data-question2-next
               >NEXT</button>
           </div>
         </div>
   
         <!-- fixed edit popup -->
-        <div id="fixed-edit-popup" class="hidden w-full h-screen fixed left-0 top-0 bottom-0 right-0">
+        <div id="fixed-edit-popup" class="hidden w-full h-screen fixed left-0 top-0 bottom-0 right-0 z-50">
           <div data-mask class="absolute left-0 top-0 right-0 bottom-0 bg-black/50 cursor-pointer"></div>
           <div data-popup class="w-full lg:w-[900px] h-fit px-[8vw] lg:px-10 lg:pt-7 lg:pb-10 fixed left-0 bottom-0 lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white">
               <h3 class="flex items-center lg:justify-between pt-[20vw] lg:pt-0 relative">
@@ -712,7 +712,7 @@
               <div class="flex flex-col gap-[3.2vw] lg:gap-4">
                   <h4 class="text-lg text-main font-medium">Power Rating</h4>
                   <div>
-                      <input class="w-[30.4vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] bg-[#EEEEEE] rounded-sm" type="text">
+                      <input class="w-[30.4vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] lg:p-3 bg-[#EEEEEE] rounded-sm focus:outline-none" type="text" value="00">
                       <span class="ml-[2.4vw] text-lg text-main font-medium lg:ml-3">W</span>
                   </div>
                   <p class="text-24 leading-[4.8vw] text-info font-normal lg:text-xs lg:text-sub lg:-mt-2">*Please enter the estimated wattage of the appliance.</p>
@@ -721,16 +721,16 @@
               <div class="flex flex-col lg:gap-4">
                   <h4 class="text-lg text-main font-medium">Estimated daily running time</h4>
                   <div class="flex items-center gap-[3.2vw] lg:gap-3">
-                      <input class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] lg:p-3 bg-[#EEEEEE] rounded-sm" type="text">
+                      <input class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] lg:p-3 bg-[#EEEEEE] rounded-sm focus:outline-none" type="text" value="00">
                       <span class="text-lg text-main font-medium">Hours</span>
-                      <input class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] lg:p-3 bg-[#EEEEEE] rounded-sm" type="text">
+                      <input class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] lg:p-3 bg-[#EEEEEE] rounded-sm focus:outline-none" type="text" value="00">
                       <span class="text-lg text-main font-medium">Mins</span>
                   </div>
                   <p class="text-24 leading-[4.8vw] text-info font-normal lg:text-xs lg:text-sub lg:-mt-2">*Please enter the estimated running time of the appliance.</p>
               </div>
               
               <div class="flex items-center justify-center mt-[6vw] mb-[6vw] lg:mb-0">
-                  <button class="w-[206px] h-12 border-2 border-primary border-solid bg-primary rounded-full text-center text-lg text-white font-semibold">CONFIRM</button>
+                  <button class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 border-2 border-primary border-solid bg-primary rounded-full text-center text-lg text-white font-semibold">CONFIRM</button>
               </div>
           </div>
         </div>
@@ -891,11 +891,11 @@
     
             <div class="w-full flex items-center justify-center gap-[4vw] lg:gap-6 mt-[6.8vw] mb-[7.2vw] lg:mt-[30px] lg:mb-0">
               <button
-                class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
+                class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
                 data-question3-back
               >BACK</button>
               <button
-                class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold"
+                class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold"
                 data-question3-next
               >NEXT</button>
             </div>
@@ -905,7 +905,7 @@
     
     
         <!-- fixed two models popup -->
-        <div id="fixed-two-models-popup" class="hidden w-full h-screen fixed left-0 top-0 bottom-0 right-0">
+        <div id="fixed-two-models-popup" class="hidden w-full h-screen fixed left-0 top-0 bottom-0 right-0 z-50">
           <div data-mask class="absolute left-0 top-0 right-0 bottom-0 bg-black/50 cursor-pointer"></div>
           <div data-popup class="w-full lg:w-[1200px] h-fit max-h-screen overflow-y-auto px-[8vw] py-[14.4vw] lg:px-[92px] lg:py-[54px] fixed left-0 bottom-0 lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white">
             <button
@@ -936,8 +936,8 @@
                   </p>
                 </div>
                 <p class="flex items-center justify-between lg:justify-center mt-[6.8vw] lg:mt-10 lg:gap-6">
-                  <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">LEARN MORE</button>
-                  <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold">ADD TO CART</button>
+                  <button class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">LEARN MORE</button>
+                  <button class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold">ADD TO CART</button>
                 </p>
               </li>
     
@@ -962,8 +962,8 @@
                   </p>
                 </div>
                 <p class="flex items-center justify-between lg:justify-center mt-[6.8vw] lg:mt-10 lg:gap-6">
-                  <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">LEARN MORE</button>
-                  <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold">ADD TO CART</button>
+                  <button class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">LEARN MORE</button>
+                  <button class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold">ADD TO CART</button>
                 </p>
               </li>
             </ul>
@@ -1083,7 +1083,7 @@
             </div>
             
             <!-- fixed bottom -->
-            <div id="fixed-combo-popup" class="w-full bg-white overflow-hidden fixed bottom-0 left-0 py-[10.8vw] lg:py-0 lg:static">
+            <div id="fixed-combo-popup" class="w-full bg-white overflow-hidden fixed bottom-0 left-0 py-[10.8vw] lg:py-0 lg:static z-50">
               <div class="w-full max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-center lg:justify-between lg:mt-[34px] mb-[3.3333333333333335vw] lg:mb-10">
                 <div class="flex flex-col lg:flex-row">
                   <p class="text-center text-[4vw] leading-[4.8vw] text-black lg:text-base lg:text-main font-normal">Solar Generator 2000 Pro</p>
@@ -1097,11 +1097,11 @@
           
               <div class="w-full flex items-center justify-center gap-[4vw] lg:gap-6 lg:my-[30px]">
                 <button
-                  class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
+                  class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
                   data-question4-back
                 >BACK</button>
                 <button
-                  class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold"
+                  class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold"
                   data-question4-next
                 >NEXT</button>
               </div>
@@ -1131,9 +1131,9 @@
                           <del class="text-[3.2vw] leading-36 lg:text-base font-normal text-sub">$ 2,798.00</del>
                       </p>
                   </div>
-                  <p class="flex items-center justify-between lg:justify-center mt-[6.8vw] lg:mt-10 lg:gap-6">
-                      <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">LEARN MORE</button>
-                      <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold">BUY NOW</button>
+                  <p class="flex items-center justify-between lg:justify-center mt-[6.8vw] lg:mt-10 gap-[5.2vw] lg:gap-6">
+                      <button class="w-[34vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">LEARN MORE</button>
+                      <button class="w-[34vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold">BUY NOW</button>
                   </p>
               </li>
   
@@ -1147,7 +1147,7 @@
                       <h2 class="text-lg">New Product Coming Soon</h2>
                       <img class="block lg:hidden w-[29.6vw] h-[39.6vw] object-cover" src="/img/no-result_mb.png" alt="">
                       <img class="hidden lg:block w-[373px] h-[199px] object-cover" src="/img/no-result_pc.png" alt="">
-                      <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">BOOKING</button>
+                      <button class="w-[34vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">BOOKING</button>
                   </div>
               </li>
           </ul>
@@ -1165,7 +1165,7 @@
                       <div class="flex-1">
                           <h2 class="w-full text-[3.2vw] leading-36 lg:text-sm font-medium text-black lg:text-main line-clamp-2">Jackery Explorer 2000 Pro Portable Power Station</h2>
                           <p class="text-26 leading-[5.2vw] lg:text-sm font-normal text-main lg:text-sub mb-[4.8vw] lg:mb-3">$ 209,900</p>
-                          <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">ADD TO CART</button>
+                          <button class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">ADD TO CART</button>
                       </div>
                   </div>
                   <div class="w-full h-[1px] lg:h-5 bg-[#EEEEEE] lg:bg-transparent my-[3.6vw] lg:my-0"></div>
@@ -1174,7 +1174,7 @@
                       <div class="flex-1">
                           <h2 class="w-full text-[3.2vw] leading-36 lg:text-sm font-medium text-black line-clamp-2">Jackery Explorer 2000 Pro Portable Power Station</h2>
                           <p class="text-26 leading-[5.2vw] lg:text-sm font-normal text-main mb-[4.8vw] lg:mb-3">$ 209,900</p>
-                          <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">ADD TO CART</button>
+                          <button class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">ADD TO CART</button>
                       </div>
                   </div>
                   <p class="text-xl font-bold text-primary text-center mt-[3.6vw] lg:mt-4">Total:$ 2,348.00</p>
@@ -1190,7 +1190,7 @@
                       <h2 class="text-lg">New Product Coming Soon</h2>
                       <img class="block lg:hidden w-[29.6vw] h-[39.6vw] object-cover" src="/img/no-result_mb.png" alt="">
                       <img class="hidden lg:block w-[373px] h-[199px] object-cover" src="/img/no-result_pc.png" alt="">
-                      <button class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">BOOKING</button>
+                      <button class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">BOOKING</button>
                   </div>
               </li>
           </ul>
@@ -1202,7 +1202,7 @@
               </div>
       
               <button
-                class="w-full lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
+                class="w-[40vw] h-[8.8vw] lg:w-[206px] lg:h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold"
                 data-end-try-again
               >Try Again</button>  
           </div>

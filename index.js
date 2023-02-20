@@ -8,6 +8,7 @@ class Base{
         this.nextDOM = nextEl && document.querySelector(nextEl)
         this.backBtn = nextEl && document.querySelector(backBtn)
         this.nextBtn = nextEl && document.querySelector(nextBtn)
+
         document.addEventListener('DOMContentLoaded', () => {
             if (this.backBtn) {
                 this.backBtn.onclick = () => {
@@ -25,14 +26,16 @@ class Base{
             }
         })
     }
-    scrollToHelpMeDOM() {
+    // 滚动到 动态内容 DOM
+    scrollToHelpMeDOM(callback) {
         const helpMeDOM = document.querySelector('#shopify-section-page-help-me')
         window.scrollTo({
             top: helpMeDOM.offsetTop,
             behavior: 'smooth',
         })
+        callback && callback()
     }
-    // 更新页面 title
+    // 更新 页面 title
     updateTitle(content) {
         const title = document.querySelector('[data-title]')
         title.innerHTML = content
@@ -262,17 +265,26 @@ new ChooseSolarPanel({
 
 
 class EndChoose extends Base {
-    constructor() {
+    constructor({ endBtn, }) {
         super()
+
+        this.endBtnDOM = document.querySelector(endBtn)
+
         document.addEventListener('DOMContentLoaded', () => {
             this.init()
             this.updateTitle('Meet your Portable Power Solution!')
         })
     }
     init() {
-
+        this.endBtnDOM.onclick = () => {
+            this.scrollToHelpMeDOM(() => {
+                setTimeout(() => {
+                    location.reload()
+                }, 700);
+            })
+        }
     }
 }
 new EndChoose({
-
+    endBtn: '[data-end-try-again]',
 })
