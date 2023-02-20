@@ -4,6 +4,7 @@ import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
+import CompressPlugin from "vite-plugin-compression"
 
 export default defineConfig({
   base: '',
@@ -45,4 +46,10 @@ export default defineConfig({
       }
     },
   },
+  plugins: [
+    CompressPlugin({
+      ext: '.gz',
+      deleteOriginFile: false,
+    })
+  ]
 })
