@@ -34,6 +34,9 @@ module.exports = {
         borderRadius: {
           sm: "var(--raduis-sm)",
           DEFAULT: "var(--radius)",
+        },
+        backgroundImage: {
+          'finished': "url('/img/finished.png')",
         }
       },
     },

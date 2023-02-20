@@ -25,7 +25,7 @@
     <div class="choose-appliances-wrap bg-f5">
         <ul class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[20px] gap-y-[3.2vw] lg:gap-y-[16px] p-[8vw] lg:px-10 lg:py-5">
             <li class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
-                <label class="flex-1 flex items-center cursor-pointer" for="1">
+                <label class="flex-1 flex items-center cursor-pointer" for="appliance-1">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
@@ -33,97 +33,127 @@
                     </div>
                 </label>
                 <div class="flex">
-                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <button
+                        class="text-lg lg:text-base font-normal text-primary mr-[18px]"
+                        data-edit
+                        data-power="80"
+                        data-hours="6"
+                    >Edit</button>
                     <input
-                        type="checkbox" id="1"
+                        type="checkbox" id="appliance-1"
                         class="
                             appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
                             border border-info border-solid cursor-pointer
                             checked:bg-primary checked:border-primary
+                            checked:bg-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
                         "/>
                 </div>
             </li>
             <li class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
-                <label class="flex-1 flex items-center cursor-pointer" for="2">
+                <label class="flex-1 flex items-center cursor-pointer" for="appliance-2">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
-                        <p class="text-[3.2vw] leading-36 lg:text-xs font-medium text-info">80W/6h/day</p>
+                        <p class="text-[3.2vw] leading-36 lg:text-xs font-medium text-info">5W/6h/day</p>
                     </div>
                 </label>
                 <div class="flex">
-                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <button
+                        class="text-lg lg:text-base font-normal text-primary mr-[18px]"
+                        data-edit
+                        data-power="5"
+                        data-hours="6"
+                    >Edit</button>
                     <input
-                        type="checkbox" id="2"
+                        type="checkbox" id="appliance-2"
                         class="
                             appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
                             border border-info border-solid cursor-pointer
                             checked:bg-primary checked:border-primary
+                            checked:bg-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
                         "/>
                 </div>
             </li>
             <li class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
-                <label class="flex-1 flex items-center cursor-pointer" for="3">
+                <label class="flex-1 flex items-center cursor-pointer" for="appliance-3">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
-                        <p class="text-[3.2vw] leading-36 lg:text-xs font-medium text-info">80W/6h/day</p>
+                        <p class="text-[3.2vw] leading-36 lg:text-xs font-medium text-info">1120W/1h/day</p>
                     </div>
                 </label>
                 <div class="flex">
-                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <button
+                        class="text-lg lg:text-base font-normal text-primary mr-[18px]"
+                        data-edit
+                        data-power="1120"
+                        data-hours="1"
+                    >Edit</button>
                     <input
-                        type="checkbox" id="3"
+                        type="checkbox" id="appliance-3"
                         class="
                             appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
                             border border-info border-solid cursor-pointer
                             checked:bg-primary checked:border-primary
+                            checked:bg-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
                         "/>
                 </div>
             </li>
             <li class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
-                <label class="flex-1 flex items-center cursor-pointer" for="4">
+                <label class="flex-1 flex items-center cursor-pointer" for="appliance-4">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
-                        <p class="text-[3.2vw] leading-36 lg:text-xs font-medium text-info">80W/6h/day</p>
+                        <p class="text-[3.2vw] leading-36 lg:text-xs font-medium text-info">18W/8h/day</p>
                     </div>
                 </label>
                 <div class="flex">
-                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <button
+                        class="text-lg lg:text-base font-normal text-primary mr-[18px]"
+                        data-edit
+                        data-power="18"
+                        data-hours="8"
+                    >Edit</button>
                     <input
-                        type="checkbox" id="4"
+                        type="checkbox" id="appliance-4"
                         class="
                             appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
                             border border-info border-solid cursor-pointer
                             checked:bg-primary checked:border-primary
+                            checked:bg-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
                         "/>
                 </div>
             </li>
             <li class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none">
-                <label class="flex-1 flex items-center cursor-pointer" for="5">
+                <label class="flex-1 flex items-center cursor-pointer" for="appliance-5">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
-                        <p class="text-[3.2vw] leading-36 lg:text-xs font-medium text-info">80W/6h/day</p>
+                        <p class="text-[3.2vw] leading-36 lg:text-xs font-medium text-info">700W/1h/day</p>
                     </div>
                 </label>
                 <div class="flex">
-                    <button class="text-lg lg:text-base font-normal text-primary mr-[18px]">Edit</button>
+                    <button
+                        class="text-lg lg:text-base font-normal text-primary mr-[18px]"
+                        data-edit
+                        data-power="700"
+                        data-hours="1"
+                    >Edit</button>
                     <input
-                        type="checkbox" id="5"
+                        type="checkbox" id="appliance-5"
                         class="
                             appearance-none w-[7.2vw] h-[7.2vw] lg:w-[32px] lg:h-[32px] bg-white rounded-full
                             border border-info border-solid cursor-pointer
                             checked:bg-primary checked:border-primary
+                            checked:bg-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
                         "/>
                 </div>
             </li>
         </ul>
     </div>
 
-    <!-- fixed bottom -->
-    <div id="fixed-appliance-popup" class="hidden lg:block w-full bg-white lg:bg-f5 overflow-hidden fixed bottom-0 left-0 pt-[3.2vw] pb-[20vw] px-[8vw] lg:py-0 lg:static">
+    <!-- fixed choosed popup -->
+    <div id="fixed-choosed-popup" class="hidden lg:block w-full bg-white lg:bg-f5 overflow-hidden fixed bottom-0 left-0 pt-[3.2vw] pb-[20vw] px-[8vw] lg:py-0 lg:static">
         <div
             class="
                 max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2
@@ -148,37 +178,53 @@
         </div>
     
         <div class="w-full flex items-center justify-center gap-[4vw] lg:gap-6 lg:my-[30px]">
-            <!-- 按钮无需处理 -->
-            <a href="" class="w-full lg:w-fit block flex-1 text-center lg:flex-none">BACK</a>
-            <a href="" class="w-full lg:w-fit block flex-1 text-center lg:flex-none">NEXT</a>
+            <button class="w-full lg:w-[206px] h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid rounded-full text-lg text-primary font-semibold">BACK</button>
+            <button class="w-full lg:w-[206px] h-12 flex-1 text-center lg:flex-none border-2 border-primary border-solid bg-primary rounded-full text-lg text-white font-semibold">NEXT</button>
         </div>
     </div>
 
-    <div class="w-full px-[8vw] pt-[20vw] fixed left-0 bottom-0 bg-white">
-        <h3 class="flex items-center">
-            <img src="/img/icons/Laptop.png" alt="">
-            <span>Laptop</span>
-            <button>X</button>
-        </h3>
-        <div class="w-full h-[1px] bg-input my-[6.4vw]"></div>
-        <div class="flex flex-col gap-[3.2vw]">
-            <h4 class="text-lg text-main font-medium">Power Rating</h4>
-            <div>
-                <input class="w-[30.4vw] h-[11.2vw] text-center p-[2vw] bg-[#EEEEEE] rounded-sm" type="text">
-                <span class="mr-[2.4vw] text-lg text-main font-medium">W</span>
+    <!-- fixed edit popup -->
+    <div id="fixed-edit-popup" class="hidden w-full h-screen fixed left-0 top-0 bottom-0 right-0">
+        <div data-mask class="absolute left-0 top-0 right-0 bottom-0 bg-black/50 cursor-pointer"></div>
+        <div data-popup class="w-full lg:w-[900px] h-fit px-[8vw] lg:px-10 lg:pt-7 lg:pb-10 fixed left-0 bottom-0 lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 bg-white">
+            <h3 class="flex items-center lg:justify-between pt-[20vw] lg:pt-0 relative">
+                <span class="flex items-center gap-[4.4vw] lg:gap-4">
+                    <img class="w-[10.8vw] h-[10.8vw] lg:w-[68px] lg:h-[68px]" src="/img/icons/Laptop.png" alt="">
+                    <span class="text-xl font-bold text-main">Laptop</span>
+                </span>
+                <button
+                    data-close
+                    class="
+                        absolute top-[5.2vw] right-0 lg:top-5 lg:right-5 w-[7.2vw] h-[7.2vw] lg:w-7 lg:h-7
+                        before:block before:w-7 before:h-[2px] before:absolute before:left-0 before:top-[14px] before:bg-info before:rotate-45
+                        after:block after:w-7 after:h-[2px] after:absolute after:left-0 after:top-[14px] after:bg-info after:-rotate-45
+                    "
+                ></button>
+            </h3>
+            <div class="w-full h-[1px] bg-input mt-[5.2vw] mb-[6.4vw] lg:mt-2 lg:mb-5"></div>
+            <div class="flex flex-col gap-[3.2vw] lg:gap-4">
+                <h4 class="text-lg text-main font-medium">Power Rating</h4>
+                <div>
+                    <input class="w-[30.4vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] bg-[#EEEEEE] rounded-sm" type="text">
+                    <span class="ml-[2.4vw] text-lg text-main font-medium lg:ml-3">W</span>
+                </div>
+                <p class="text-24 leading-[4.8vw] text-info font-normal lg:text-xs lg:text-sub lg:-mt-2">*Please enter the estimated wattage of the appliance.</p>
             </div>
-            <p class="text-24 leading-[4.8vw] text-info font-normal">*Please enter the estimated wattage of the appliance.</p>
-        </div>
-        <div class="w-full h-[1px] bg-input my-[6.4vw]"></div>
-        <div>
-            <h4 class="text-lg text-main font-medium">Estimated daily running time</h4>
-            <div class="flex items-center gap-[3.2vw]">
-                <input class="w-[17.6vw] h-[11.2vw] text-center p-[2vw] bg-[#EEEEEE] rounded-sm" type="text">
-                <span class="text-lg text-main font-medium">Hours</span>
-                <input class="w-[17.6vw] h-[11.2vw] text-center p-[2vw] bg-[#EEEEEE] rounded-sm" type="text">
-                <span class="text-lg text-main font-medium">Mins</span>
+            <div class="w-full h-[1px] bg-input my-[6.4vw] lg:my-5"></div>
+            <div class="flex flex-col lg:gap-4">
+                <h4 class="text-lg text-main font-medium">Estimated daily running time</h4>
+                <div class="flex items-center gap-[3.2vw] lg:gap-3">
+                    <input class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] lg:p-3 bg-[#EEEEEE] rounded-sm" type="text">
+                    <span class="text-lg text-main font-medium">Hours</span>
+                    <input class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center p-[2vw] lg:p-3 bg-[#EEEEEE] rounded-sm" type="text">
+                    <span class="text-lg text-main font-medium">Mins</span>
+                </div>
+                <p class="text-24 leading-[4.8vw] text-info font-normal lg:text-xs lg:text-sub lg:-mt-2">*Please enter the estimated running time of the appliance.</p>
             </div>
-            <p class="text-24 leading-[4.8vw] text-info font-normal">*Please enter the estimated running time of the appliance.</p>
+            
+            <div class="flex items-center justify-center mt-[6vw] mb-[6vw] lg:mb-0">
+                <button class="w-[206px] h-12 border-2 border-primary border-solid bg-primary rounded-full text-center text-lg text-white font-semibold">CONFIRM</button>
+            </div>
         </div>
     </div>
 
