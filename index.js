@@ -172,11 +172,10 @@ function initChooseScenarios() {
 
 // 选择电器
 class ChooseAppliances extends Base {
-    constructor({ fixedChoosedPopup, fixedEditPopup, editPopupConfig, ...props }) {
+    constructor({ fixedEditPopup, editPopupConfig, ...props }) {
         super(props)
 
         this.applianceCheckBoxes = this.DOM.querySelectorAll('[data-appliance-checkbox]') || []
-        this.fixedChoosedPopup = this._$(fixedChoosedPopup)
 
         // edit popup
         this.editBtns = this.DOM.querySelectorAll('[data-edit]') || []
@@ -190,7 +189,6 @@ class ChooseAppliances extends Base {
         this.confirmEditBtn = this._$(confirmEditBtn)
 
         this.appliancesInitData = []
-        this.bodyWidth = document.body.clientWidth
 
         this.init()
     }
@@ -224,16 +222,8 @@ class ChooseAppliances extends Base {
             item.checked = false
         })
         it.checked = true
-        
 
         this.nextBtn.disabled = false
-        
-        // 移动端
-        if (this.bodyWidth < 1024) {
-            this.fixedChoosedPopup.style.display = 'block'
-            const fixedHeight = this.fixedChoosedPopup.clientHeight
-            document.body.style.paddingBottom = fixedHeight + 'px'
-        }
     }
     handleEditBtn(action, it) {
         this.fixedEditPopup.style.display = 'block'
@@ -283,10 +273,6 @@ class ChooseAppliances extends Base {
         this.addApplianceBtn.parentNode.nextElementSibling.style.display = 'none'
 
         this.nextBtn.disabled = true
-        if (this.bodyWidth < 1024) {
-            this.fixedChoosedPopup.style.display = 'none'
-            document.body.style.paddingBottom = '0px'
-        }
     }
     renderPowerInfo(power, hours, mins) {
         const w = +power ? `${power}W` : ''
@@ -346,7 +332,6 @@ function initChooseAppliances() {
         },
 
         fixedEditPopup: '#fixed-edit-popup',
-        fixedChoosedPopup: '#fixed-choosed-popup',
 
         editPopupConfig: {
             addApplianceBtn: '[data-appliance-add]',
@@ -434,23 +419,15 @@ function initChooseAdvantages() {
 
 // 选择太阳能板
 class ChooseSolarPanel extends Base {
-    constructor({ fixedPopup, ...props }) {
+    constructor({ ...props }) {
         super(props)
-
-        this.fixedPopup = this._$(fixedPopup)
 
         this.portablePowers = this.DOM.querySelectorAll('[data-portable]') || []
         this.solarPanels = this.DOM.querySelectorAll('[data-solar]') || []
 
-        this.bodyWidth = document.body.clientWidth
         this.init()
     }
     init() {
-        const fixedHeight = this.fixedPopup.clientHeight
-        if (this.bodyWidth < 1024) {
-            document.body.style.paddingBottom = fixedHeight + 'px'
-        }
-
         this.portablePowers.forEach(it => it.onclick = () => this.initTab('portable', it))
         this.solarPanels.forEach(it => it.onclick = () => this.initTab('solar', it))
     }
@@ -486,8 +463,6 @@ function initChooseSolarPanel() {
                 initEndChoose()
             },
         },
-    
-        fixedPopup: '#fixed-combo-popup',
     })
 }
 
