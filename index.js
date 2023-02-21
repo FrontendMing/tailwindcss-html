@@ -234,26 +234,17 @@ class ChooseAppliances extends Base {
         closeBtn.onclick = () => this.fixedEditPopup.style.display = 'none'
 
         const popupTitleDOM = this._$('[data-edit-popup-title]')
-        const { name, power, hours, mins, } = it.parentNode.parentNode.dataset
+        const { name, icon, power, hours, mins, } = it.parentNode.parentNode.dataset
         this.editPopupName = name
         this.powerInput.value = power
         this.hoursInput.value = hours
         this.minsInput.value = mins
 
         this.popupAction = action
-        if (action === 'edit' && name !== 'Custom Appliance') {
-            popupTitleDOM.innerHTML = `
-                <img
-                    class="w-[10.8vw] h-[10.8vw] lg:w-[68px] lg:h-[68px]"
-                    src="/img/icons/Laptop.png" alt=""
-                />
-                <span class="text-xl font-bold text-main">${name}</span>
-            `
-        } else {
-            popupTitleDOM.innerHTML = `
-                <span class="text-xl font-bold text-main">Custom Appliance</span>
-            `
-        }
+        popupTitleDOM.innerHTML = `
+            <img class="w-[10.8vw] h-[10.8vw] lg:w-[68px] lg:h-[68px]" src="${icon}" alt="" />
+            <span class="text-xl font-bold text-main">${name}</span>
+        `
     }
     // 新增
     initAddAppliancePopup() {
