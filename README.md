@@ -24,18 +24,19 @@
 ```
 ├── public                     # 项目公共静态资源目录
 │   └── img                    # 静态图片目录
-├── section                    # 页面片段部分
-│   ├── choose-appliances      # choose appliances 片段
+├── page                       # 多页面
+│   ├── how-to-choose          # how-to-choose 智能选购页
+|   |   ├── index.css       
 │   │   ├── index.html
 │   │   └── index.js
-│   ├── choose-scenarios       # choose scenarios 片段
+│   ├── sp-collection          # sp-collection SP 聚合页
+|   |   ├── index.css       
 │   │   ├── index.html
 │   │   └── index.js
-│   └── ...                    # 更多片段
+│   └── ...                    # 更多页面
 │
-├── index.css                  # 页面 css（公共）
-├── index.html                 # 页面 html
-├── index.js                   # 页面 js
+├── common.css                 # 页面 css（公共）
+├── index.html                 # 项目页面入口，仅作示例页面跳转用
 ├── package.json               # 项目包管理说明
 ├── tailwind.config.js         # tailwindcss 配置
 └── vite.config.js             # 项目打包配置
