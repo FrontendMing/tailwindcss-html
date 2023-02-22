@@ -217,11 +217,15 @@ class ChooseAppliances extends Base {
         this.confirmEditBtn.onclick = () => this.confirmPopupData()
     }
     handleChoosed(it) {
-        // const { name, } = it.parentNode.parentNode.dataset
-        this.applianceCheckBoxes.forEach(item => {
-            item.checked = false
-        })
-        it.checked = true
+        const { name, } = it.parentNode.parentNode.dataset
+        const addApplianceBtnDisplay = this.addApplianceBtn.style.display
+        if (name !== 'Custom Appliance' || addApplianceBtnDisplay === 'none') {
+            this.applianceCheckBoxes.forEach(item => {
+                item.checked = false
+            })
+            it.checked = true
+        }
+        
 
         this.nextBtn.disabled = false
     }
@@ -254,10 +258,16 @@ class ChooseAppliances extends Base {
     clearAll() {
         this.applianceCheckBoxes.forEach(it => {
             it.checked = false
-            const { name, } = it.parentNode.parentNode.dataset
+
+            const parentNodeLi = it.parentNode.parentNode
+            const { name, } = parentNodeLi.dataset
             const { power, hours, mins, } = this.appliancesInitData.find(it => it.name === name)
-            const applianceInfoDom = it.parentNode.parentNode.querySelector('[data-appliance-info]')
+            const applianceInfoDom = parentNodeLi.querySelector('[data-appliance-info]')
             applianceInfoDom.innerHTML = this.renderPowerInfo(power, hours, mins)
+
+            parentNodeLi.setAttribute('data-power', power)
+            parentNodeLi.setAttribute('data-hours', hours)
+            parentNodeLi.setAttribute('data-mins', mins)
         })
 
         this.addApplianceBtn.style.display = 'block'
@@ -274,27 +284,30 @@ class ChooseAppliances extends Base {
     confirmPopupData() {
         const [ power, hours, mins, ] = [ this.powerInput.value, this.hoursInput.value, this.minsInput.value, ]
         this.applianceCheckBoxes.forEach(it => {
-            const { name, } = it.parentNode.parentNode.dataset
+            const parentNodeLi = it.parentNode.parentNode
+
+            const { name, } = parentNodeLi.dataset
             if (name === this.editPopupName) {
                 it.checked = true
-                const applianceInfoDom = it.parentNode.parentNode.querySelector('[data-appliance-info]')
+
+                const applianceInfoDom = parentNodeLi.querySelector('[data-appliance-info]')
                 applianceInfoDom.innerHTML = this.renderPowerInfo(power, hours, mins)
+
+                parentNodeLi.setAttribute('data-power', power)
+                parentNodeLi.setAttribute('data-hours', hours)
+                parentNodeLi.setAttribute('data-mins', mins)
+
+                if (this.popupAction === 'add') {
+                    this.addApplianceBtn.style.display = 'none'
+        
+                    const nextElementSibling = this.addApplianceBtn.parentNode.nextElementSibling
+                    nextElementSibling.style.display = 'flex'
+                }
             } else {
                 it.checked = false
             }
         })
         this.fixedEditPopup.style.display = 'none'
-
-        if (this.popupAction === 'add') {
-            this.addApplianceBtn.style.display = 'none'
-
-            const parentNode = this.addApplianceBtn.parentNode.parentNode
-            const nextElementSibling = this.addApplianceBtn.parentNode.nextElementSibling
-            nextElementSibling.style.display = 'flex'
-            parentNode.setAttribute('data-power', power)
-            parentNode.setAttribute('data-hours', hours)
-            parentNode.setAttribute('data-mins', mins)
-        }
     }
 }
 function initChooseAppliances() {
