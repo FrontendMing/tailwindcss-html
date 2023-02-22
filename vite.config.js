@@ -37,6 +37,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
+        index: resolve(__dirname, 'index.html'),
         'how-to-choose': resolve(__dirname, 'page/how-to-choose/index.html'),
         'sp-collection': resolve(__dirname, 'page/sp-collection/index.html'),
       }
