@@ -120,7 +120,7 @@
         <ul class="choose-scenarios-tabs w-full bg-white flex items-center justify-center gap-[8vw] lg:gap-[70px]">
           <li
             class="py-[6.666666666666667vw] lg:py-5 cursor-pointer group active"
-            data-tab="outdoor"
+            data-tab="Outdoor"
             data-mb-img="/img/tabs/outdoor_mb.png"
             data-pc-img="/img/tabs/outdoor_pc.png"
           >
@@ -138,7 +138,7 @@
           </li>
           <li
             class="py-[6.8vw] lg:py-5 cursor-pointer group"
-            data-tab="home"
+            data-tab="Home"
             data-mb-img="/img/tabs/home_mb.png"
             data-pc-img="/img/tabs/home_pc.png"
           >
@@ -156,7 +156,7 @@
           </li>
           <li
             class="py-[6.8vw] lg:py-5 cursor-pointer group"
-            data-tab="working"
+            data-tab="Working"
             data-mb-img="/img/tabs/working_mb.png"
             data-pc-img="/img/tabs/working_pc.png"
           >
@@ -174,7 +174,7 @@
           </li>
           <li
             class="py-[6.8vw] lg:py-5 cursor-pointer group"
-            data-tab="others"
+            data-tab="Others"
             data-mb-img="/img/tabs/others_mb.png"
             data-pc-img="/img/tabs/others_pc.png"
           >
@@ -248,7 +248,9 @@
                 lg:group-[.active]:text-main
                 lg:group-[.active]:font-medium
                 after:group-[.active]:bg-primary
-              ">Outdoor</span>
+              "
+              data-scenarios
+            >Outdoor</span>
           </li>
         </ul>
         <div class="flex flex-col items-center justify-center  lg:pt-5 lg:pb-10 bg-white lg:bg-f5">
@@ -545,14 +547,14 @@
         <div class="choose-appliances-wrap bg-f5">
           <ul class="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[20px] gap-y-[3.2vw] lg:gap-y-[16px] p-[8vw] lg:px-10 lg:py-5">
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Laptop"
               data-icon="/img/icons/Laptop.png"
               data-power="80"
               data-hours="6"
               data-mins="0"
             >
-                <label class="flex-1 flex items-center cursor-pointer" for="appliance-1">
+                <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-1">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/Laptop.png" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Laptop</h4>
@@ -576,14 +578,14 @@
                 </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Microwave"
               data-icon="/img/icons/Microwave.png"
               data-power="700"
               data-hours="1"
               data-mins="0"
             >
-                <label class="flex-1 flex items-center cursor-pointer" for="appliance-2">
+                <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-2">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/Microwave.png" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Microwave</h4>
@@ -607,14 +609,14 @@
                 </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Light"
               data-icon="/img/icons/Light.png"
               data-power="5"
               data-hours="6"
               data-mins="0"
             >
-                <label class="flex-1 flex items-center cursor-pointer" for="appliance-3">
+                <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-3">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/Light.png" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Light</h4>
@@ -638,14 +640,14 @@
                 </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Drone"
               data-icon="/img/icons/Drone.png"
               data-power="90"
               data-hours="0"
               data-mins="30"
             >
-                <label class="flex-1 flex items-center cursor-pointer" for="appliance-4">
+                <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-4">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/Drone.png" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Drone</h4>
@@ -669,14 +671,14 @@
                 </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Coffee maker"
               data-icon="/img/icons/CoffeeMaker.png"
               data-power="1120"
               data-hours="1"
               data-mins="0"
             >
-                <label class="flex-1 flex items-center cursor-pointer" for="appliance-5">
+                <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-5">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/CoffeeMaker.png" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Coffee maker</h4>
@@ -700,14 +702,14 @@
                 </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Speaker"
               data-icon="/img/icons/Speaker.png"
               data-power="10"
               data-hours="4"
               data-mins="0"
             >
-              <label class="flex-1 flex items-center cursor-pointer" for="appliance-6">
+              <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-6">
                   <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/Speaker.png" alt="" />
                   <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                       <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Speaker</h4>
@@ -731,14 +733,14 @@
               </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Phone"
               data-icon="/img/icons/Phone.png"
               data-power="18"
               data-hours="8"
               data-mins="0"
             >
-              <label class="flex-1 flex items-center cursor-pointer" for="appliance-7">
+              <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-7">
                   <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/Phone.png" alt="" />
                   <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                       <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Phone</h4>
@@ -762,14 +764,14 @@
               </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Kettle"
               data-icon="/img/icons/Kettle.png"
               data-power="850"
               data-hours="1"
               data-mins="0"
             >
-                <label class="flex-1 flex items-center cursor-pointer" for="appliance-8">
+                <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-8">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/Kettle.png" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Kettle</h4>
@@ -793,14 +795,14 @@
                 </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Projector"
               data-icon="/img/icons/Projector.png"
               data-power="100"
               data-hours="3"
               data-mins="0"
             >
-                <label class="flex-1 flex items-center cursor-pointer" for="appliance-9">
+                <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-9">
                     <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/Projector.png" alt="" />
                     <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                         <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Projector</h4>
@@ -824,14 +826,14 @@
                 </div>
             </li>
             <li
-              class="flex items-center justify-between bg-white p-[5.2vw] lg:px-[30px] lg:py-[21px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
+              class="flex items-center justify-between bg-white px-[5.2vw] lg:px-[30px] border border-info rounded-[4vw] lg:rounded-none lg:border-none"
               data-name="Custom Appliance"
               data-icon="/img/icons/CustomAppliance.png"
               data-power="0"
               data-hours="0"
               data-mins="0"
             >
-              <label class="flex-1 flex items-center cursor-pointer" for="appliance-10">
+              <label class="flex-1 flex items-center cursor-pointer py-[5.2vw] lg:py-[21px]" for="appliance-10">
                   <img class="w-[9.2vw] h-[9.2vw] lg:w-[50px] lg:h-[50px]" src="/img/icons/CustomAppliance.png" alt="" />
                   <div class="flex flex-col ml-[5.2vw] lg:ml-5">
                       <h4 class="text-sm lg:text-base font-medium text-main lg:text-black mb-1">Custom Appliance</h4>

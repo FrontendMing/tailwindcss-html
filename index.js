@@ -83,6 +83,7 @@ class StartChoose extends Base {
     constructor({ ...props }) {
         super({ ...props })
         this.tabs = this.DOM.querySelectorAll('[data-tab]') || []
+        this.currentTab = 'Outdoor' // 默认 Outdoor
 
         document.addEventListener('DOMContentLoaded', () => {
             this.init()
@@ -103,9 +104,9 @@ class StartChoose extends Base {
             <img class="hidden lg:block w-full object-cover" src="${pcImg}" alt="">
         `
 
-        const tab = it.dataset.tab
+        this.currentTab = it.dataset.tab
         const tabOthers = this._$('[data-tab-others]')
-        tabOthers.style.display = tab === 'others' ? 'block' : 'none'
+        tabOthers.style.display = this.currentTab === 'Others' ? 'block' : 'none'
     }
 }
 const startchoose = new StartChoose({
@@ -117,7 +118,7 @@ const startchoose = new StartChoose({
             startchoose.updateTitle('What scenario will you choose a portable power solution for?')
 
             // 初始化 选择场景
-            initChooseScenarios()
+            initChooseScenarios(startchoose.currentTab)
         },
     },
 })
@@ -126,10 +127,13 @@ const startchoose = new StartChoose({
 
 // 选择场景
 class ChooseScenarios extends Base {
-    constructor(props) {
+    constructor({ currentTab, ...props }) {
         super(props)
 
         this.sceneCheckboxes = this.DOM.querySelectorAll('[data-scene-checkbox]') || []
+
+        const choosedScenarios = this.DOM.querySelector('[data-scenarios]')
+        choosedScenarios.innerHTML = currentTab
 
         this.init()
     }
@@ -145,8 +149,10 @@ class ChooseScenarios extends Base {
         this.nextBtn.disabled = !checkboxesArray.includes(true)
     }
 }
-function initChooseScenarios() {
+function initChooseScenarios(currentTab) {
     const chooseScenarios = new ChooseScenarios({
+        currentTab,
+
         prevEl: '#start',
         el: '#question1',
         nextEl: '#question2',
