@@ -195,6 +195,7 @@ class ChooseAppliances extends Base {
         this.confirmEditBtn = this._$(confirmEditBtn)
 
         this.appliancesInitData = []
+        this.total
 
         this.init()
     }
@@ -225,16 +226,13 @@ class ChooseAppliances extends Base {
     handleChoosed(it) {
         const { name, } = it.parentNode.parentNode.dataset
         const addApplianceBtnDisplay = this.addApplianceBtn.style.display
-        if (name !== 'Custom Appliance' || addApplianceBtnDisplay === 'none') {
-            this.applianceCheckBoxes.forEach(item => {
-                item.checked = false
-            })
-            it.checked = true
+        if (name === 'Custom Appliance' && addApplianceBtnDisplay !== 'none') {
+            it.checked = false
         }
         
-
         this.nextBtn.disabled = false
     }
+    // 编辑 或 新增
     handleEditBtn(action, it) {
         this.fixedEditPopup.style.display = 'block'
 
@@ -256,9 +254,10 @@ class ChooseAppliances extends Base {
             <span class="text-xl font-bold text-main">${name}</span>
         `
     }
-    // 新增
-    initAddAppliancePopup() {
-
+    // 计算选中的电器瓦数
+    calcChoosedPower(power, hours, mins) {
+        const time = hours + mins/60
+        return Math.round(power * time)
     }
     // 清空全部
     clearAll() {
@@ -287,6 +286,7 @@ class ChooseAppliances extends Base {
         const m = +mins ? `${mins}m` : ''
         return w ? [w, h, m, 'day'].filter(it => it.length > 0).join('/') : null
     }
+    // 提交
     confirmPopupData() {
         const [ power, hours, mins, ] = [ this.powerInput.value, this.hoursInput.value, this.minsInput.value, ]
         this.applianceCheckBoxes.forEach(it => {

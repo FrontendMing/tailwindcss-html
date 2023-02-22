@@ -1,0 +1,62 @@
+@import url(../../common.css);
+
+@layer components {
+    .choose-step {
+        @apply
+            w-36 h-36 lg:w-[32px] lg:h-[32px] bg-f0 rounded-full flex-center
+            border lg:border-2 border-input border-solid relative
+            group-[.active]:bg-primary group-[.active]:text-white group-[.active]:border-primary
+            group-[.finish]:bg-primary group-[.finish]:text-transparent group-[.finish]:border-primary
+            group-[.finish]:bg-choose-finished group-[.finish]:bg-no-repeat group-[.finish]:bg-center
+            group-[.finish]:bg-contain
+    }
+    .choose-tab {
+      @apply
+        text-lg text-info lg:text-sub font-semibold lg:font-light relative pb-2
+        after:block after:w-full after:h-[3px] after:absolute after:left-0 after:bottom-0
+        group-[.active]:text-black lg:group-[.active]:text-main
+        lg:group-[.active]:font-medium after:group-[.active]:bg-primary
+    }
+    .choose-checkbox {
+      @apply
+        appearance-none absolute right-20 bottom-20 lg:right-[12px] lg:bottom-[12px] w-39 h-39
+        lg:w-[40px] lg:h-[40px] rounded-full bg-white cursor-pointer border border-info border-solid
+        checked:bg-primary checked:border-primary
+        checked:bg-choose-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
+    }
+    .choose-checkbox-title {
+      @apply
+        text-lg lg:text-[20px] lg:leading-[30px] text-main lg:text-black p-2
+        font-medium lg:font-normal text-center lg:mt-[12px]
+    }
+    .choose-appliance-checkbox {
+      @apply
+        appearance-none w-54 h-54 lg:w-[32px] lg:h-[32px] bg-white rounded-full
+        border border-info border-solid cursor-pointer
+        checked:bg-primary checked:border-primary
+        checked:bg-choose-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
+    }
+    .choose-select-number {
+      @apply
+        appearance-none w-150 h-60 lg:w-[90px] lg:h-[30px] pr-30 lg:pr-[20px]
+        text-center border border-solid border-info rounded-10 lg:rounded-[10px]
+        cursor-pointer bg-select-arrow bg-no-repeat bg-28 lg:bg-[length:14px_10px]
+        bg-[right_4vw_center] lg:bg-[right_25px_center] grayscale group-[.active]:grayscale-0
+        group-[.active]:border-primary group-[.active]:bg-[rgba(253,80,0,0.1)]
+    }
+  
+    .choose-btn-back {
+      @apply
+        max-w-[40vw] w-300 h-66 lg:max-w-[206px] lg:w-[206px] lg:h-[48px] flex-1 flex-center
+        border-2 border-primary border-solid rounded-full text-32 leading-62 lg:text-lg lg:leading-[44px]
+        text-primary font-semibold
+    }
+    .choose-btn-next {
+      @apply
+        max-w-[40vw] w-300 h-66 lg:max-w-[206px] lg:w-[206px] lg:h-[48px] flex-1 flex-center
+        border-2 border-primary border-solid rounded-full text-32 leading-62 lg:text-lg lg:leading-[44px]
+        text-white font-semibold bg-primary
+        disabled:cursor-not-allowed disabled:bg-[rgba(253,80,0,0.2)] 
+        disabled:border-[rgba(253,80,0,0.2)]
+    }
+}
