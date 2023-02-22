@@ -29,6 +29,7 @@ module.exports = {
           '70': pxToVmin(70),
           '80': pxToVmin(80),
           '120': pxToVmin(120),
+          '150': pxToVmin(150),
           '180': pxToVmin(180),
           '220': pxToVmin(220),
           '255': pxToVmin(255),
@@ -40,6 +41,7 @@ module.exports = {
           '36': pxToVmin(36),
           '39': pxToVmin(39),
           '54': pxToVmin(54),
+          '60': pxToVmin(60),
           '66': pxToVmin(66),
           '70': pxToVmin(70),
           '80': pxToVmin(80),
@@ -107,13 +109,18 @@ module.exports = {
           '4': pxToVmin(4),
           sm: pxToVmin(8),
           DEFAULT: "var(--radius)",
+          '10': pxToVmin(10),
           '20': pxToVmin(20),
           '30': pxToVmin(30),
           '60': pxToVmin(60),
         },
         backgroundImage: {
           'finished': "url('/img/finished.png')",
+          'select-arrow': "url(data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAdVBMVEUAAAD+TwD/UQD9TwD+TwD8TwD9TwD9TwD9UAD9TQD/TgD9UAD9TwD+UAD9UAD+UAD9TwD+UAD+UAD9UAD9TgD8TgD+TgD/TgD/TQD9UAD9TwD+UAD9UAD9TwD9TwD9TwD9UAD/UAD/UAD/UQD/SgDyTQD9UAAKnUttAAAAJnRSTlMALQrG0rOih3QeEPr37+Xj17utmWhaTz8G+O7Kk4F7bmxWRiYYFO9je+4AAACVSURBVCjP3ZBZEoMgEERHQME1atyy73P/I6YTqkwEvYDvg+rmAVMFrYlYqYB82qLGapjz3nNXZsadx555d3PcGe4wIAQbpMvEaezIxE4tkfWf26JXgiyJRItGF6HVw1hFiB6KX8ZJ5yX5+rgK6UhTTtgrYztBk0uTMhd3BWfIp8v4S0Nz9DlU2tI8+I6soyWeJqB18gbkxQ06ti86dgAAAABJRU5ErkJggg==)"
         },
+        backgroundSize: {
+          '28': pxToVmin(28),
+        }
       },
     },
     variants: {

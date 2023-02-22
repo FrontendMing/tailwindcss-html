@@ -26,6 +26,7 @@
 * {
   font-family: 'Gilroy';
   box-sizing: border-box;
+  outline: none;
 }
 
 :root {
