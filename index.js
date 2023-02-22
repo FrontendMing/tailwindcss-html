@@ -252,7 +252,7 @@ class ChooseAppliances extends Base {
 
         this.popupAction = action
         popupTitleDOM.innerHTML = `
-            <img class="w-[10.8vw] h-[10.8vw] lg:w-[68px] lg:h-[68px]" src="${icon}" alt="" />
+            <img class="w-80 h-80 lg:w-[68px] lg:h-[68px]" src="${icon}" alt="" />
             <span class="text-xl font-bold text-main">${name}</span>
         `
     }

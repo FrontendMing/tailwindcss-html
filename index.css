@@ -25,6 +25,7 @@
 
 * {
   font-family: 'Gilroy';
+  box-sizing: border-box;
 }
 
 :root {
@@ -59,16 +60,6 @@
   --leading-xl: 54PX;
   --leading-2xl: 66PX;
   --leading-3xl: 70PX;
-
-
-  /* 新增 */
-  --bg-f0-color: #F0F0F0;  /* 背景色 */
-  --bg-f5-color: #F5F5F5;  /* 背景色 */
-  --raduis-sm: 8PX;  /* 移动端通用圆角 */
-  --text-24-size: 24PX; 
-  --text-26-size: 26PX; 
-  --leading-36: 36PX;
-  --leading-39: 39PX;
 }
 
 /* 移动端 */
@@ -91,13 +82,30 @@
     --leading-xl: 7.2vw;
     --leading-2xl: 8.8vw;
     --leading-3xl: 8vw;
+  }
+}
 
 
-    /* 新增 */
-    --raduis-sm: 1.06666666666667vw;  /* 移动端通用圆角 */
-    --text-24-size: 3.2vw; /* 24px */
-    --text-26-size: 3.466666666666667vw; /* 26px */
-    --leading-36: 4.8vw; /* 36px */
-    --leading-39: 5.2vw; /* 39px */
+.flex-center {
+  @apply flex items-center justify-center
+}
+.flex-between {
+  @apply flex items-center justify-between
+}
+
+@layer components {
+  .btn-back {
+    @apply
+      max-w-[40vw] w-300 h-66 lg:max-w-[206px] lg:w-[206px] lg:h-[48px] flex-1 flex items-center justify-center
+      border-2 border-primary border-solid rounded-full text-32 leading-62 lg:text-lg lg:leading-[44px]
+      text-primary font-semibold
+  }
+  .btn-next {
+    @apply
+      max-w-[40vw] w-300 h-66 lg:max-w-[206px] lg:w-[206px] lg:h-[48px] flex-1 flex items-center justify-center
+      border-2 border-primary border-solid rounded-full text-32 leading-62 lg:text-lg lg:leading-[44px]
+      text-white font-semibold bg-primary
+      disabled:cursor-not-allowed disabled:bg-[rgba(253,80,0,0.2)] 
+      disabled:border-[rgba(253,80,0,0.2)];
   }
 }
