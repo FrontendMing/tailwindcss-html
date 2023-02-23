@@ -45,6 +45,14 @@
         group-[.active]:border-primary group-[.active]:bg-[rgba(253,80,0,0.1)]
     }
   
+    .choose-btn-close {
+      @apply
+        absolute top-40 right-0 lg:top-[20px] lg:right-[10px] w-54 h-54 lg:w-[28px] lg:h-[28px]
+        before:block before:w-54 before:lg:w-[28px] before:h-[2px]
+        before:absolute before:left-0 before:top-[3.6vw] before:lg:top-[14px] before:bg-info before:rotate-45
+        after:block after:w-54 after:lg:w-[28px] after:h-[2px]
+        after:absolute after:left-0 after:top-[3.6vw] after:lg:top-[14px] after:bg-info after:-rotate-45
+    }
     .choose-btn-back {
       @apply
         max-w-[40vw] w-300 h-66 lg:max-w-[206px] lg:w-[206px] lg:h-[48px] flex-1 flex-center
