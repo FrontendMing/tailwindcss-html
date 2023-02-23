@@ -1,6 +1,10 @@
 // 必须得将 css 文件引入进来，这样才能打包进去
 import './index.css'
 
+document.addEventListener("DOMContentLoaded", () => {
+    initStartChoose()
+})
+
 class BaseChoose {
     constructor({prevEl, el, nextEl, btnConfig = {}}) {
         const { backBtn, backBtnCallback, nextBtn, nextBtnCallback, } = btnConfig
@@ -116,19 +120,21 @@ class StartChoose extends BaseChoose {
         tabOthers.style.display = this.currentTab === 'Others' ? 'block' : 'none'
     }
 }
-const startchoose = new StartChoose({
-    el: '#start',
-    nextEl: '#question1',
-    btnConfig: {
-        nextBtn: '[data-start-next]',
-        nextBtnCallback: () => {
-            startchoose.updateTitle('What scenario will you choose a portable power solution for?')
+function initStartChoose(){
+    const startchoose = new StartChoose({
+        el: '#start',
+        nextEl: '#question1',
+        btnConfig: {
+            nextBtn: '[data-start-next]',
+            nextBtnCallback: () => {
+                startchoose.updateTitle('What scenario will you choose a portable power solution for?')
 
-            // 初始化 选择场景
-            initChooseScenarios(startchoose.currentTab)
+                // 初始化 选择场景
+                initChooseScenarios(startchoose.currentTab)
+            },
         },
-    },
-})
+    })
+}
 
 
 
