@@ -34,6 +34,7 @@ module.exports = {
           '180': pxToVmin(180),
           '220': pxToVmin(220),
           '255': pxToVmin(255),
+          '296': pxToVmin(296),
           '300': pxToVmin(300),
         },
         height: {
@@ -50,6 +51,8 @@ module.exports = {
           '96': pxToVmin(96),
           '120': pxToVmin(120),
           '180': pxToVmin(180),
+          '314': pxToVmin(314),
+          '341': pxToVmin(341),
         },
         fontSize: {
           base: ["var(--text-base-size)", "var(--leading-base)"],
