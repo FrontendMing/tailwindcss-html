@@ -73,7 +73,7 @@
       @apply
         max-w-[40vw] w-300 h-66 lg:max-w-[206px] lg:w-[206px] lg:h-[48px] flex-1 flex-center
         border-2 border-primary border-solid rounded-full text-32 leading-62 lg:text-lg lg:leading-[44px]
-        text-primary font-semibold
+        text-primary font-semibold hover:text-white hover:bg-primary transition-all duration-300
     }
     .choose-btn-next {
       @apply
