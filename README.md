@@ -25,7 +25,7 @@
 ├── public                     # 项目公共静态资源目录
 │   └── img                    # 静态图片目录
 ├── page                       # 多页面
-│   ├── how-to-choose          # how-to-choose 智能选购页
+│   ├── help-you-choose          # help-you-choose 智能选购页
 |   |   ├── index.css       
 │   │   ├── index.html
 │   │   └── index.js

@@ -117,7 +117,7 @@ module.exports = {
           '60': pxToVmin(60),
         },
         backgroundImage: {
-          'choose-finished': "url('/img/how-to-choose/finished.png')",
+          'choose-finished': "url('/img/help-you-choose/finished.png')",
           'select-arrow': "url(data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAdVBMVEUAAAD+TwD/UQD9TwD+TwD8TwD9TwD9TwD9UAD9TQD/TgD9UAD9TwD+UAD9UAD+UAD9TwD+UAD+UAD9UAD9TgD8TgD+TgD/TgD/TQD9UAD9TwD+UAD9UAD9TwD9TwD9TwD9UAD/UAD/UAD/UQD/SgDyTQD9UAAKnUttAAAAJnRSTlMALQrG0rOih3QeEPr37+Xj17utmWhaTz8G+O7Kk4F7bmxWRiYYFO9je+4AAACVSURBVCjP3ZBZEoMgEERHQME1atyy73P/I6YTqkwEvYDvg+rmAVMFrYlYqYB82qLGapjz3nNXZsadx555d3PcGe4wIAQbpMvEaezIxE4tkfWf26JXgiyJRItGF6HVw1hFiB6KX8ZJ5yX5+rgK6UhTTtgrYztBk0uTMhd3BWfIp8v4S0Nz9DlU2tI8+I6soyWeJqB18gbkxQ06ti86dgAAAABJRU5ErkJggg==)"
         },
         backgroundSize: {
