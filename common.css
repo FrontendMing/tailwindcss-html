@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* font-family */
-@font-face {
+/* @font-face {
   font-display: swap; font-family: 'Gilroy'; font-style: normal; font-weight: bold;
   src: url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-bold.woff2?v=1670917251') format('woff2'), url('https://cdn.shopify.com/s/files/1/0550/0524/9633/files/gilroy-bold.woff?v=1670917251') format('woff');
 }
@@ -26,7 +26,7 @@
 * {
   font-family: 'Gilroy';
   outline: none;
-}
+} */
 
 :root {
   --primary-color: #FD5000;  /* 系统主题色 */
