@@ -1,5 +1,13 @@
 @import url(../../common.css);
 
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+}
+
 @layer components {
     .choose-step {
         @apply
@@ -17,12 +25,19 @@
         group-[.active]:text-black lg:group-[.active]:text-main
         lg:group-[.active]:font-medium after:group-[.active]:bg-primary
     }
-    .choose-checkbox {
+    input[type="number"] {
       @apply
-        appearance-none absolute right-20 bottom-20 lg:right-[12px] lg:bottom-[12px] w-39 h-39
-        lg:w-[40px] lg:h-[40px] rounded-full bg-white cursor-pointer border border-info border-solid
+        appearance-none text-center text-36 leading-54 lg:text-sm p-15 lg:p-3 bg-[#EEEEEE] rounded-sm
+    }
+    input[type="checkbox"] {
+      @apply
+        appearance-none rounded-full bg-white cursor-pointer border border-info border-solid
         checked:bg-primary checked:border-primary
         checked:bg-choose-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
+    }
+    .choose-checkbox {
+      @apply
+        absolute right-20 bottom-20 lg:right-[12px] lg:bottom-[12px] w-39 h-39 lg:w-[40px] lg:h-[40px] 
     }
     .choose-checkbox-title {
       @apply
@@ -30,11 +45,7 @@
         font-medium lg:font-normal text-center lg:mt-[12px]
     }
     .choose-appliance-checkbox {
-      @apply
-        appearance-none w-54 h-54 lg:w-[32px] lg:h-[32px] bg-white rounded-full
-        border border-info border-solid cursor-pointer
-        checked:bg-primary checked:border-primary
-        checked:bg-choose-finished checked:bg-no-repeat checked:bg-center checked:bg-contain
+      @apply w-54 h-54 lg:w-[32px] lg:h-[32px]
     }
     .choose-select-number {
       @apply

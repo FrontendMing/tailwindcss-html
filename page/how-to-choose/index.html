@@ -623,7 +623,7 @@
                       lg:text-base text-main lg:text-sub
                       font-medium lg:font-normal
                   "
-              >Total Energy Consumption Per Day:<span class="text-lg font-bold text-main ml-5">0.72Wh/day</span></p>
+              >Total Energy Consumption Per Day:<span class="text-lg font-bold text-main ml-5" data-total-energy>0 Wh/day</span></p>
           </div>
       
           <div class="w-full flex-center gap-30 lg:gap-[24px] lg:my-[50px]">
@@ -651,10 +651,11 @@
                   <h4 class="text-lg text-main font-medium">Power Rating</h4>
                   <div>
                       <input
-                        class="w-[30.4vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center text-36 leading-54 lg:text-sm p-15 lg:p-3 bg-[#EEEEEE] rounded-sm focus:outline-none"
-                        type="text"
+                        class="w-[30.4vw] h-[11.2vw] lg:w-[93px] lg:h-[60px]"
+                        type="number"
                         value="0"
                         data-power-input
+                        oninput="value=value.replace(/\D/g);if(value<0)value=0;if(value>3000)value=3000;"
                       />
                       <span class="ml-18 text-lg text-main font-medium lg:ml-3">W</span>
                   </div>
@@ -665,17 +666,19 @@
                   <h4 class="text-lg text-main font-medium">Estimated daily running time</h4>
                   <div class="flex items-center gap-25 lg:gap-[12px]">
                       <input
-                        class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center text-36 leading-54 lg:text-sm p-15 lg:p-3 bg-[#EEEEEE] rounded-sm focus:outline-none"
-                        type="text"
+                        class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px]"
+                        type="number"
                         value="0"
                         data-hours-input
+                        oninput="value=value.replace(/\D/g);if(value<0)value=0;if(value>24)value=24;"
                       />
                       <span class="text-lg text-main font-medium">Hours</span>
                       <input
-                        class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px] text-center text-36 leading-54 lg:text-sm p-15 lg:p-3 bg-[#EEEEEE] rounded-sm focus:outline-none"
-                        type="text"
-                        value="00"
+                        class="w-[17.6vw] h-[11.2vw] lg:w-[93px] lg:h-[60px]"
+                        type="number"
+                        value="0"
                         data-mins-input
+                        oninput="value=value.replace(/\D/g);if(value<0)value=0;if(value>60)value=60;"
                       />
                       <span class="text-lg text-main font-medium">Mins</span>
                   </div>
