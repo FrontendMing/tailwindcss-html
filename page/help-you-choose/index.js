@@ -5,23 +5,21 @@ class BaseChoose {
     constructor({prevEl, el, nextEl, btnConfig = {}}) {
         const { backBtn, backBtnCallback, nextBtn, nextBtnCallback, } = btnConfig
 
-        document.addEventListener('DOMContentLoaded', () => {
-            this.prevDOM = this.prevDOM || this.$$(prevEl)
-            this.DOM = this.DOM || this.$$(el)
-            this.nextDOM = this.nextDOM || this.$$(nextEl)
-            this.backBtn = this.backBtn || this.$$(backBtn)
-            this.nextBtn = this.nextBtn || this.$$(nextBtn)
+        this.prevDOM = this.prevDOM || this.$$(prevEl)
+        this.DOM = this.DOM || this.$$(el)
+        this.nextDOM = this.nextDOM || this.$$(nextEl)
+        this.backBtn = this.backBtn || this.$$(backBtn)
+        this.nextBtn = this.nextBtn || this.$$(nextBtn)
 
-            // 清楚全部 按钮
-            this.clearAllBtn = this.clearAllBtn || this.$$('[data-clear-all]')
+        // 清楚全部 按钮
+        this.clearAllBtn = this.clearAllBtn || this.$$('[data-clear-all]')
 
-            if (this.backBtn) {
-                this.backBtn.onclick = () => this.btnClickHook('back', backBtnCallback)
-            }
-            if (this.nextBtn) {
-                this.nextBtn.onclick = () => this.btnClickHook('next', nextBtnCallback)
-            }
-        })
+        if (this.backBtn) {
+            this.backBtn.onclick = () => this.btnClickHook('back', backBtnCallback)
+        }
+        if (this.nextBtn) {
+            this.nextBtn.onclick = () => this.btnClickHook('next', nextBtnCallback)
+        }
     }
     $$(entity) {
         return entity ? document.querySelector(entity) : null
@@ -93,14 +91,12 @@ class StartChoose extends BaseChoose {
     constructor({ ...props }) {
         super({ ...props })
         
+        this.tabs = this.DOM.querySelectorAll('[data-tab]') || []
         this.currentTab = 'Outdoor' // 默认 Outdoor
 
-        document.addEventListener('DOMContentLoaded', () => {
-            this.init()
-        })
+        this.init()
     }
     init() {
-        this.tabs = this.DOM.querySelectorAll('[data-tab]') || []
         this.tabs.forEach(it => it.onclick = () => this.handleTabClick(it))
     }
     handleTabClick(it) {
@@ -147,7 +143,7 @@ class ChooseScenarios extends BaseChoose {
         choosedScenarios.innerHTML = currentTab
 
         this.init()
-    }
+}
     init() {
         this.nextBtn.disabled = true
         this.sceneCheckboxes.forEach(it => {
