@@ -55,6 +55,11 @@
         bg-[right_4vw_center] lg:bg-[right_25px_center] grayscale group-[.active]:grayscale-0
         group-[.active]:border-primary group-[.active]:bg-[rgba(253,80,0,0.1)]
     }
+    .choose-star {
+      @apply
+        w-20 h-20 lg:w-[20px] lg:h-[20px]
+        bg-star bg-no-repeat bg-center bg-contain
+    }
   
     .choose-btn-close {
       @apply
