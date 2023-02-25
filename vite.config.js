@@ -40,6 +40,8 @@ export default defineConfig({
         index: resolve(__dirname, 'index.html'),
         'help-you-choose': resolve(__dirname, 'page/help-you-choose/index.html'),
         'sp-collection': resolve(__dirname, 'page/sp-collection/index.html'),
+        'sg-collection': resolve(__dirname, 'page/sg-collection/index.html'),
+        'pps-collection': resolve(__dirname, 'page/pps-collection/index.html'),
       }
     },
   },

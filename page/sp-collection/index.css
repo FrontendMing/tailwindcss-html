@@ -1,2 +1,151 @@
 @import url(../../common.css);
 
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-work-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 50PX;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.swiper-work-pagination::after{
+    display: block;
+    content: '';
+    position: absolute;
+    left: 120PX;
+    top: 16PX;
+    width: 480PX;
+    height: 3PX;
+    background-color: #C2C2C2;
+    z-index: 0;
+}
+.swiper-work-pagination-item {
+    width: 240PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.swiper-work-pagination-item > span:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32PX;
+    height: 32PX;
+    background-color: #FFF;
+    border: 2PX solid #C2C2C2;
+    border-radius: 50%;
+    font-size: 26PX;
+    font-weight: 400;
+    color: #C2C2C2;
+    line-height: 30PX;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all .7s;
+}
+.swiper-work-pagination-item > span:last-of-type {
+    height: 36PX;
+    color: #666;
+    font-size: 18PX;
+    line-height: 36PX;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s;
+}
+.swiper-work-pagination-item-active > span:first-of-type {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.swiper-work-pagination-item-active > span:last-of-type {
+    color: #333;
+    font-weight: 500;
+    font-size: 26PX;
+    line-height: 36PX;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-work-pagination {
+        bottom: 6.8vmin;
+    }
+    .swiper-work-pagination::after {
+        left: 12.5vw;
+        top: 2.2vw;
+        width: 55vw;
+        height: 0.4vw;
+    }
+    .swiper-work-pagination-item {
+        width: 25vw;
+    }
+    .swiper-work-pagination-item:nth-of-type(3) {
+        width: 35vw;
+    }
+    .swiper-work-pagination-item > span:first-of-type {
+        width: 4.266666666666667vw;
+        height: 4.266666666666667vw;
+        border-width: 0.26666666666666666vw;
+        font-size: 3.466666666666667vw;
+        line-height: 4vw;
+    }
+    .swiper-work-pagination-item > span:last-of-type {
+        height: 4.8vw;
+        font-size: 2.4vw;
+        line-height: 4.8vw;
+    }
+    .swiper-work-pagination-item-active > span:last-of-type {
+        font-size: 3.466666666666667vw;
+        line-height: 4.8vw;
+    }
+}
+
+
+@layer components {
+    .sp-collection-title {
+        @apply
+            w-full max-w-[1200px] mx-auto text-center px-50 pb-60 lg:px-0 lg:pb-[70px]
+            font-semibold text-black text-2xl
+    }
+    .sp-collection-btn-small {
+        @apply
+            flex-center border border-solid border-primary rounded-full text-primary
+            w-[40vmin] h-[8.8vmin] text-24 leading-28 font-medium
+            lg:w-[206px] lg:h-[46px] lg:text-[20px] lg:leading-[24px] lg:font-bold
+    }
+    .sp-collection-btn {
+        @apply
+            flex-center text-primary border-2 lg:border-[2px] border-solid border-primary
+            font-bold rounded-full
+            w-[50vmin] h-[8.8vmin] text-26 leading-[8.8vmin]
+            lg:w-[360px] lg:h-[66px] lg:text-[26px] lg:leading-[32px]
+    }
+    .sp-collection-btn-fill {
+        @apply
+            flex-center text-white bg-primary font-bold rounded-full
+            w-[50vmin] h-[8.8vmin] text-26 leading-[8.8vmin]
+            lg:w-[360px] lg:h-[66px] lg:text-[26px] lg:leading-[32px] 
+    }
+    .sp-select-number {
+        @apply
+          appearance-none w-150 h-60 lg:w-[150px] lg:h-[60px] pr-30 lg:pr-[20px]
+          text-center border border-solid border-info rounded-10 lg:rounded-[10px]
+          cursor-pointer bg-select-arrow bg-no-repeat bg-28 lg:bg-[length:24px_18px]
+          text-32 lg:text-[32px] font-medium text-info
+          bg-[right_4vw_center] lg:bg-[right_25px_center] grayscale group-[.active]:grayscale-0
+          group-[.active]:border-primary group-[.active]:bg-[rgba(253,80,0,0.1)]
+          group-[.active]:text-primary
+    }
+}
