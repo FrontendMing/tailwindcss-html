@@ -5,6 +5,15 @@ function pxToVmin(variable) {
   return `${variable / 7.5}vmin`
 }
 
+
+const MAX_NUMBER = 500
+
+const JSON = {}
+for (let i = 0; i < MAX_NUMBER; i++) {
+  JSON[i] = pxToVmin(i)
+}
+
+
 module.exports = {
     content: ["./**/*.html", "./**/*.js"],
     theme: {
@@ -21,42 +30,11 @@ module.exports = {
         },
         width: {
           screen: "var(--screen-width, 100vw)",
-          '32': pxToVmin(32),
-          '36': pxToVmin(36),
-          '39': pxToVmin(39),
-          '50': pxToVmin(50),
-          '54': pxToVmin(54),
-          '66': pxToVmin(66),
-          '70': pxToVmin(70),
-          '80': pxToVmin(80),
-          '100': pxToVmin(100),
-          '120': pxToVmin(120),
-          '150': pxToVmin(150),
-          '180': pxToVmin(180),
-          '200': pxToVmin(200),
-          '220': pxToVmin(220),
-          '240': pxToVmin(240),
-          '255': pxToVmin(255),
-          '296': pxToVmin(296),
-          '300': pxToVmin(300),
+          ...JSON
         },
         height: {
           screen: "var(--screen-height, 100vh)",
-          '4': pxToVmin(4),
-          '30': pxToVmin(30),
-          '36': pxToVmin(36),
-          '39': pxToVmin(39),
-          '54': pxToVmin(54),
-          '60': pxToVmin(60),
-          '66': pxToVmin(66),
-          '70': pxToVmin(70),
-          '80': pxToVmin(80),
-          '96': pxToVmin(96),
-          '100': pxToVmin(100),
-          '120': pxToVmin(120),
-          '180': pxToVmin(180),
-          '314': pxToVmin(314),
-          '341': pxToVmin(341),
+          ...JSON
         },
         fontSize: {
           base: ["var(--text-base-size)", "var(--leading-base)"],
@@ -66,77 +44,21 @@ module.exports = {
           xl: ["var(--text-xl-size)", "var(--leading-xl)"],
           '2xl': ["var(--text-2xl-size)", "var(--leading-2xl)"],
           '3xl': ["var(--text-3xl-size)", "var(--leading-3xl)"],
-          '12': pxToVmin(12),
-          '14': pxToVmin(14),
-          '16': pxToVmin(16),
-          '18': pxToVmin(18),
-          '20': pxToVmin(20),
-          '24': pxToVmin(24),
-          '26': pxToVmin(26),
-          '30': pxToVmin(30),
-          '32': pxToVmin(32),
-          '36': pxToVmin(36),
-          '45': pxToVmin(45),
-          '55': pxToVmin(55),
-          '70': pxToVmin(70),
+          ...JSON
         },
         lineHeight: {
-          '28': pxToVmin(28),
-          '30': pxToVmin(30),
-          '32': pxToVmin(32),
-          '36': pxToVmin(36),
-          '39': pxToVmin(39),
-          '48': pxToVmin(48),
-          '54': pxToVmin(54),
-          '60': pxToVmin(60),
-          '62': pxToVmin(62),
+          ...JSON
         },
         spacing: {
-          '4': pxToVmin(4),
-          '5': pxToVmin(5),
-          '8': pxToVmin(8),
-          '10': pxToVmin(10),
-          '12': pxToVmin(12),
-          '15': pxToVmin(15),
-          '16': pxToVmin(16),
-          '18': pxToVmin(18),
-          '20': pxToVmin(20),
-          '24': pxToVmin(24),
-          '25': pxToVmin(25),
-          '28': pxToVmin(28),
-          '30': pxToVmin(30),
-          '32': pxToVmin(32),
-          '35': pxToVmin(35),
-          '40': pxToVmin(40),
-          '45': pxToVmin(45),
-          '48': pxToVmin(48),
-          '50': pxToVmin(50),
-          '55': pxToVmin(55),
-          '60': pxToVmin(60),
-          '65': pxToVmin(65),
-          '70': pxToVmin(70),
-          '75': pxToVmin(75),
-          '80': pxToVmin(80),
-          '90': pxToVmin(90),
-          '100': pxToVmin(100),
-          '105': pxToVmin(105),
-          '108': pxToVmin(108),
-          '120': pxToVmin(120),
-          '150': pxToVmin(150),
-          '180': pxToVmin(180),
+          ...JSON
         },
         borderWidth: {
-          '2': pxToVmin(2),
-          '4': pxToVmin(4),
+          ...JSON
         },
         borderRadius: {
-          '4': pxToVmin(4),
           sm: pxToVmin(8),
           DEFAULT: "var(--radius)",
-          '10': pxToVmin(10),
-          '20': pxToVmin(20),
-          '30': pxToVmin(30),
-          '60': pxToVmin(60),
+          ...JSON
         },
         backgroundImage: {
           'choose-finished': "url(data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAABXhJREFUeF7lm1tsFFUYx3/fzBYMBoUoIC8ixqixokHwBaJEEgUNwrYWo2AUSiLxwRsVFVTaJhJpUGpM1MRESjTWB0y7bfCeYCLyRDHxAkYStfoiNwPGeGt35pgznV12287unN2d7pqZZJ/2O9/5///n9p3vnCNE/KnVzHCGuVmEehRXKbhS4GJgqv/TCP7QPwWnBY4hfK8UR+w6Ppe9nIoSokThXCVZ4MIa4FbgWqDUehTwLfCpBd2S4nCl8ZYKbAwOtZKprsWDQDNwTaWB+v6OArstlzek3+s1ZX9lC6CSTHPhMeARYHrZiMI5OAO8YsHLkuJsuCLjW5UsgAJxVrFOhA5gRjkgyih7SimesvvYI6CHi/FXkgBqBZc6Nt0iLDauMYICSnHQdlgj+/jF1L2xAKqRxa5LDzDTtLKI7U9aFo3Sw0GTeowESDfQLIrXgUkmlUyg7ZASHkr0sjtsnaEEUKux3TQ7UTwe1nFV7YROK8Fm2YtTDEdRATR5laZHKVYWc1ZL/4vQLwkai4lQVACngV3/m5Yf3QJCp93LpkINU1AAf8y/WUsta4pFCRsKzQmBAviz/f4anvDCajFkWSwNWh3GFUCv826CQzW41IUlPdrupJXmxvHihDEC+BHegVoJckplPLqcFyz1cdPoiHGMAOlVrBcJv45WCuBE+FGK5kQfXbl15Qngb2yOVTG2j1qHU5bOR+RsoPIEcJK0Aa1Ro6iy/3Y75fH0vqwA/n7+5wnc0lZLhzOWy5xMPiErgJOkBXixWqiM6q2bjNzThixd5xVT+/eg3m2F9FBYN0/YKV7K6wFOkiMRZnLCAitup8k/3YvccHuererZgXp7S/HyIxZH7RT1WQH8HN5A2NJVswsg7+E5exx3/ezQ0CxYqHOM3hBwkl53KBgzh/YclWEh8iUIAOyyU7RkBPgamBcV9rL9FiOv5wGzIaAhfWOnuE503t4d5kQZqeuy+RV0EIb8lx+iXkiaTILe3GnVMUvSSe4SeC9aFiV6D0t+RwMM/2tciYImcRrYhqLduHTUBSIm78EXWsVJ8g4jpzi182nyW1LI/OWBmJTu9iW2fI7Tbj0EDgksNGKfmISs3Z4fiHQ/B8P/GLkZ1zgM+cMfoDoaS+r2uXUqGNA94CfgMhPkcn8H0vBkfpGjB3C33wl//W7iKt82DPnKtHym3kEtwGngIhPUVtevMO2SsUUGv8JtX+4FJcbfxJPXEH/TAujp0yjPHyiAdnn8B9y22+DEj+E1qA55jW+oJAG88d+0NZigDkvbl8Ggjq+KfNUjnxXAeAhg1yGbupFFTcHs/jw7Mid890WwTRjyFZrwAkB4Q8B4EvSciYVsfA1ZtjGY4NDfqJ13owb2jbWpPnmNabC0ZTCHjqx9Hml6JlgEJ416dQPqs7fO2dQGeX2e7i2DZQdCsuJRpLkTJOCYQSnUnhZUfyfUCHm/NborFgrLkvuQh7vATgT2BtXTAXOvLxzhRTvm87HpULiSmyFZcAeyeS9MnlJs7h/3fzWR5PV2UG+GKr4dvnoR1rPvw/nTjESYaPLZ7bBG6SSpbEJkzjys1o9hergUVRXIa9ojCRFfgMqnxGbNxWr9BGZfUbAnVIm8xnQuJRZZUvTCmVjbPoLL59fEmM8FkZcU9XtBNGnxKRdgbe2H+iV5IlSx5TWO/LS4L0B0ByN15yH3tiO3PODNvSUcZBhNqCGMxx6MxP5ozO8F8T0c1QLE/nhcixDrCxJeLxi5BB3fKzKeCHG+JJVZQmJ9TS4jQqwvSmZEiPVVWW8+iPtl6YwIsb0unxtXx/bBRK4IsX4yk10i4/xoKitCnJ/N5Q2JuD6cHJ10iO3T2fGyL7F8PB2Uhqr15/P/ASUblG/nyEnoAAAAAElFTkSuQmCC)",
@@ -144,16 +66,15 @@ module.exports = {
           'star': "url(data:img/jpg;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAmCAYAAAC29NkdAAAAAXNSR0IArs4c6QAAA/lJREFUWEfNmEuIHFUUhv9TTldVHtNVIVnELKarByYIWUh8xAQ0ihoTyQRHELPQnSLqQnThAwmIEMTHQnGhIrrTRVBIJBGjUWFUUKNRXATEhqnqWcQsEqaqJ4+u6rF+uY0ZZnq6+1Z310y8m4Y+5/znq3O67j23BTmuhu/eruQK5XAyL1nJS0jpJIHzjfo0veiuvHRzA2xU192aMv1egRli3FYozfyQB2RugInvfEXBLgUlxAmzHN3zvwFM/OJ2ivy4EEjIHWa59tOgkLlUMA6cLwDsaYE5bnnRvVcdMJku3sxUTrYDEYPbzJHaL4NADlzBOHCPAhxvDyHHLC/cd9UAk8C5gcCpbgAC3Gh60W/9Qg5UwbhaPALKfV2TCz+zSrWJFQdMptzrafB3tatoklNS2WqOhn/0A6kTb6tJYiipOp8AyFqZw2YpelAEc71CdgQkYdQDd0QMjoHcbBBjFBkDMQZBGcBQj8nmQPgQVISspIIKRP5iKhXbC6dFkLbdCdSXjSl3J6/hdVTJyc1QIMAoAKtHiH7dYwBTIJvQoh7iH/mzMBp+16xg7Dv7Ifioj6r0C6SLU9V+2CpHh+ZbHAfu/QAPqWlJF73M9gYg+y0vPNw81xcmq1eHx4XGpyvY2tZnjSnpA3Zp9tgVw5KXpO4Xd4vIEQD2MleqVb5OcsIu175cNHS0g7gcOHcawFEAq1cI8lIK7FvlRd+25uu4zag3OzX4OYC1ywx5wUhlr3pjO24znQAawfCOFMZxAMVlgqwZSPcUvNlFs6S2xQsd/hun1O9iXc6QM2Jwt24cy3TUJYG7leAJAOtzgjwvkF2mF6qzvOvKBKgU6oHzjgBP6ASz2Am8a3vRk1l8swNWnUkhdmYR1fkQmLS96A6d35KNultAHDjn8myx5UUbcgO84K/ZWJChv7MIZvVpcO7ateWLZ3X+mVpcrzp3q7uuTqwXu7pD26Xoa11MNkDffVqEb+rEerGT8oxdDt/SxWQDDJwPBHhEJ9aLncCHthc9qovJBBgHjvqH4BbNhnUyBV5UPgbwCohtmuQ/W160fWBAEpJUnQjAcHsxngaNA1Y5VBPQ/Ip9dwKSHgRkSweIWbMUOSJgN0htBS/7rmcI/TYivghfKozUPu50n1D3msZ08SFSXgaa95hFK03FWzUaVgcCrAfFvQKZHyABnCV40DpXe19uQkPXImXnryjEG4qPCeQAgI1XYgiO215NTUwdl7aCcdV5HsSrAGZAvG5aa96WTWcuZQFr9eGZTauT+OJTEDzXHD4EL1il6LWBAOtV5z0hzpuUN6Qchv2ALQH1XTcRPkvBersUPT4QICuwZAzqWpj7yqKtbXHuVD0K/gtPqFs2sf0wxgAAAABJRU5ErkJggg==)"
         },
         backgroundSize: {
-          '28': pxToVmin(28),
+          ...JSON
         }
       },
     },
-    variants: {
-      extend: {
-        50: ''
-      },
+    corePlugins: {
+      aspectRatio: false,
     },
     plugins: [
+      require('@tailwindcss/aspect-ratio'),
       require('@tailwindcss/line-clamp'),
     ],
 };

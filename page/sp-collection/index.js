@@ -5,6 +5,10 @@ class SPCollection {
     constructor({ swiperContainer, swiperPagination, }) {
         this.swiperContainer = swiperContainer
         this.swiperPagination = swiperPagination
+
+        // tab 锚点
+        this.tabs = document.querySelectorAll('[data-tab-id]')
+
         this.init();
     }
     init() {
@@ -48,6 +52,49 @@ class SPCollection {
                 disableOnInteraction: false,
             } : false,
         });
+
+
+        this.tabs.forEach(it => it.onclick = () => this.handleTabClick(it))
+
+        // blur 按钮
+        const blurBtns = document.querySelectorAll('[data-blur-btn]')
+        blurBtns.forEach(it => it.onclick = (e) => this.blurImageBlock(e))
+
+        // window.addEventListener('scroll', this.watchScrollEvent, false)
+    }
+    handleTabClick(it) {
+        this.tabs.forEach(v => v.classList.remove('active'))
+        it.classList.add('active')
+
+        this.scrollToBlock(it)
+    }
+    // 滚动到 对应的 DOM
+    scrollToBlock(it) {
+        const parentHeight = it.parentNode.offsetHeight
+        const tab = it.dataset.tabId
+        const offsetTop = tab && document.querySelector(`#${tab}`)?.offsetTop
+
+        window.scrollTo({
+            top: offsetTop - parentHeight,
+            behavior: 'smooth',
+        })
+    }
+    blurImageBlock(e) {
+        const blurParentDOM = e.target.parentNode
+        const blurShowText = blurParentDOM.querySelector('[data-blur-show-text]')
+        const blurMask = blurParentDOM.querySelector('[data-blur-mask]')
+        const blurImages = blurParentDOM.querySelectorAll('[data-blur-img]')
+        
+        blurShowText.style.opacity = blurShowText.style.opacity === '1' ? '0' : '1'
+        blurShowText.style.transform = blurShowText.style.transform === 'translateY(0px)' ? 'translateY(20px)' : 'translateY(0px)'
+        blurMask.style.opacity = blurMask.style.opacity === '0.5' ? '0' : '0.5'
+        blurImages.forEach(it => {
+            it.style.filter = it.style.filter === 'blur(10px)' ? 'blur(0)' : 'blur(10px)'
+        })
+    }
+    watchScrollEvent() {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        
     }
 }
 
