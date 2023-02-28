@@ -71,6 +71,7 @@ module.exports = {
       },
     },
     corePlugins: {
+      preflight: false,
       aspectRatio: false,
     },
     plugins: [

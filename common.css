@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* font-family */
 @font-face {
   font-display: swap; font-family: 'Gilroy'; font-style: normal; font-weight: bold;
@@ -92,5 +93,3 @@
 .flex-between {
   @apply flex items-center justify-between
 }
-
-
