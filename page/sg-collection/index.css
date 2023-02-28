@@ -127,7 +127,7 @@
 
 @layer components {
     .sp-collection-tab {
-        @apply text-32 leading-48 text-black font-light lg: text-lg lg:text-main relative pb-2 after:block after:w-full after:h-[3px] after:absolute after:left-0 after:bottom-0 group-[.active]:text-black lg:group-[.active]:text-main lg:group-[.active]:font-medium after:group-[.active]:bg-primary
+        @apply text-32 leading-48 text-black font-light lg:text-lg lg:text-main relative pb-2 after:block after:w-full after:h-[3px] after:absolute after:left-0 after:bottom-0 group-[.active]:text-black lg:group-[.active]:text-main lg:group-[.active]:font-medium after:group-[.active]:bg-primary
     }
 
     .sp-collection-title {

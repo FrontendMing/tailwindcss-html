@@ -19,7 +19,7 @@
   }
 
   input[type="number"] {
-    @apply appearance-none text-center text-36 leading-54 lg: text-sm p-15 lg:p-3 bg-[#EEEEEE] rounded-sm
+    @apply appearance-none text-center text-36 leading-54 lg:text-sm p-15 lg:p-3 bg-[#EEEEEE] rounded-sm
   }
 
   input[type="checkbox"] {
@@ -31,7 +31,7 @@
   }
 
   .choose-checkbox-title {
-    @apply text-lg lg: text-[20px] lg:leading-[30px] text-main lg:text-black p-2 font-medium lg:font-normal text-center lg:mt-[12px]
+    @apply text-lg lg:text-[20px] lg:leading-[30px] text-main lg:text-black p-2 font-medium lg:font-normal text-center lg:mt-[12px]
   }
 
   .choose-appliance-checkbox {
