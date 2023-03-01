@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SP Collection</title>
-    <link rel="stylesheet" href="../../preflight.css">
     <link rel="stylesheet" rel="preload" href="https://cdn.shopify.com/s/files/1/0550/0524/9633/files/swiper-bundle.min.css?v=1670922528">
     <script src="https://cdn.shopify.com/s/files/1/0550/0524/9633/t/36/assets/swiper.js?v=168158869870451652271676360775"></script>
 </head>
@@ -13,10 +12,7 @@
     
     <!-- Banner -->
     <div class="relative">
-        <div class="w-full lg:w-[1200px] h-auto absolute left-1/2 -translate-x-1/2 top-108 lg:top-[131px] px-60 flex justify-center lg:justify-end">
-            <h2 class="lg:w-[800px] font-bold text-white text-55 leading-60 lg:text-3xl text-center lg:text-right">JACKERY SOLAR PANEL HARNESS THE POWER OF THE SUN</h2>
-        </div>
-        <div class="w-full">
+        <div class="w-full h-[120vmin] lg:h-[46.35416666666667vw] lg:aspect-w-[1920px] lg:aspect-h-[890px]">
             <!-- image -->
             <img class="hidden lg:block w-full object-cover" src="/img/sp-collection/banner_pc.png" alt="">
             <img class="block lg:hidden w-full object-cover" src="/img/sp-collection/banner_mb.png" alt="">
@@ -27,6 +23,9 @@
                 loop
                 autoplay
             ></video> -->
+        </div>
+        <div class="w-full lg:w-[1200px] h-auto absolute left-1/2 -translate-x-1/2 top-108 lg:top-[131px] px-60 flex justify-center lg:justify-end">
+            <h2 class="lg:w-[800px] font-bold text-white text-55 leading-60 lg:text-3xl text-center lg:text-right">JACKERY SOLAR PANEL HARNESS THE POWER OF THE SUN</h2>
         </div>
     </div>
 
@@ -49,13 +48,9 @@
     <!-- How It Work -->
     <div id="how-it-works" class="flex flex-col pt-60 lg:pt-[120px] bg-f5">
         <h2 class="sp-collection-title">How Do Solar Panels Work</h2>
-        <div class="swiper swiper-work lg:max-h-[890px] relative" data-work="Collect,Convert,Store & Appliances">
-            <div class="swiper-wrapper swiper-work-wrapper">
-                <div class="swiper-slide swiper-work-slide">
-                    <div class="flex items-start lg:items-center justify-center flex-col px-120 absolute left-0 top-180 lg:left-1/2 lg:-translate-x-1/2 lg:top-[98px] z-1">
-                        <h3 class="text-2xl text-white font-semibold mb-16 lg:mb-[40px]">Collect</h3>
-                        <p class="text-left lg:text-center text-sm text-white font-normal">Collect solar energy by placing the solar panels in direct sunlight</p>
-                    </div>
+        <div class="w-full swiper swiper-sp-work lg:max-h-[890px] relative" data-work="Collect,Convert,Store & Appliances">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide w-full h-[142.66666666666666vmin] lg:h-[46.35416666666667vw] aspect-w-[1920px] aspect-h-[890px]">
                     <!-- image -->
                     <img class="hidden lg:block w-full object-cover" src="/img/sp-collection/how-it-work/1_pc.png" alt="">
                     <img class="block lg:hidden w-full object-cover" src="/img/sp-collection/how-it-work/1_mb.png" alt="">
@@ -66,12 +61,12 @@
                         loop
                         autoplay
                     ></video> -->
-                </div>
-                <div class="swiper-slide swiper-work-slide">
                     <div class="flex items-start lg:items-center justify-center flex-col px-120 absolute left-0 top-180 lg:left-1/2 lg:-translate-x-1/2 lg:top-[98px] z-1">
-                        <h3 class="text-2xl text-white font-semibold mb-16 lg:mb-[40px]">Convert</h3>
+                        <h3 class="text-2xl text-white font-semibold mb-16 lg:mb-[40px]">Collect</h3>
                         <p class="text-left lg:text-center text-sm text-white font-normal">Collect solar energy by placing the solar panels in direct sunlight</p>
                     </div>
+                </div>
+                <div class="swiper-slide w-full h-[142.66666666666666vmin] lg:h-[46.35416666666667vw] aspect-w-[1920px] aspect-h-[890px]">
                     <!-- image -->
                     <img class="hidden lg:block w-full object-cover" src="/img/sp-collection/how-it-work/2_pc.png" alt="">
                     <img class="block lg:hidden w-full object-cover" src="/img/sp-collection/how-it-work/2_mb.png" alt="">
@@ -82,12 +77,12 @@
                         loop
                         autoplay
                     ></video> -->
-                </div>
-                <div class="swiper-slide swiper-work-slide">
                     <div class="flex items-start lg:items-center justify-center flex-col px-120 absolute left-0 top-180 lg:left-1/2 lg:-translate-x-1/2 lg:top-[98px] z-1">
-                        <h3 class="text-2xl text-white font-semibold mb-16 lg:mb-[40px]">Store & Appliances</h3>
+                        <h3 class="text-2xl text-white font-semibold mb-16 lg:mb-[40px]">Convert</h3>
                         <p class="text-left lg:text-center text-sm text-white font-normal">Collect solar energy by placing the solar panels in direct sunlight</p>
                     </div>
+                </div>
+                <div class="swiper-slide w-full h-[142.66666666666666vmin] lg:h-[46.35416666666667vw] aspect-w-[1920px] aspect-h-[890px]">
                     <!-- image -->
                     <img class="hidden lg:block w-full object-cover" src="/img/sp-collection/how-it-work/3_pc.png" alt="">
                     <img class="block lg:hidden w-full object-cover" src="/img/sp-collection/how-it-work/3_mb.png" alt="">
@@ -98,10 +93,14 @@
                         loop
                         autoplay
                     ></video> -->
+                    <div class="flex items-start lg:items-center justify-center flex-col px-120 absolute left-0 top-180 lg:left-1/2 lg:-translate-x-1/2 lg:top-[98px] z-1">
+                        <h3 class="text-2xl text-white font-semibold mb-16 lg:mb-[40px]">Store & Appliances</h3>
+                        <p class="text-left lg:text-center text-sm text-white font-normal">Collect solar energy by placing the solar panels in direct sunlight</p>
+                    </div>
                 </div>
             </div>
             <!-- Add Pagination -->
-            <div class="swiper-work-pagination"></div>
+            <div class="swiper-sp-work-pagination"></div>
         </div>
     </div>
 
@@ -109,172 +108,158 @@
     <!-- Why Choose -->
     <div id="features" class="flex flex-col px-60 pt-90 pb-60 lg:px-0 lg:py-[120px] bg-white">
         <h2 class="sp-collection-title">Why Choose Jackery Solar Panels</h2>
-        <ul class="max-w-[1200px] mx-auto grid grid-cols-2 gap-y-25 gap-x-[40px] lg:gap-y-[50px]">
+        <ul class="w-full lg:w-[1200px] mx-auto grid gap-y-25 gap-x-[40px] lg:gap-y-[50px]">
             <li class="w-full col-span-6 lg:col-span-12 relative">
                 <div class="w-full lg:max-w-[500px] px-60 lg:px-0 flex items-start flex-col lg:items-center justify-center absolute left-0 top-108 lg:left-1/2 lg:-translate-x-1/2 lg:top-[83px] text-black z-[2]">
                     <h3 class="text-xl font-semibold text-left lg:text-center">Highest solar conversion rate <br/> in the industry</h3>
                     <dl class="flex gap-80 lg:gap-[44px] my-50 lg:my-[50px]">
                         <dd class="flex-center flex-col">
-                            <div class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px] overflow-hidden">
-                                <img
-                                    class="w-full h-full relative -left-[13.3333333333333vw] drop-shadow-[13.3333333333333vw_0_rgba(0,0,0,1)] lg:-left-[100px] lg:drop-shadow-[100px_0_rgba(0,0,0,1)]"
-                                    src="/img/sp-collection/icons/IBC_solar_technology.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px]"
+                                src="/img/sp-collection/icons/IBC_solar_technology.svg"
+                                alt=""
+                            />
                             <p class="text-20 leading-30 lg:text-base font-normal text-center">IBC solar <br/> technology</p>
                         </dd>
                         <dd class="flex-center flex-col">
-                            <div class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px] overflow-hidden">
-                                <img
-                                    class="w-full h-full relative -left-[13.3333333333333vw] drop-shadow-[13.3333333333333vw_0_rgba(0,0,0,1)] lg:-left-[100px] lg:drop-shadow-[100px_0_rgba(0,0,0,1)]"
-                                    src="/img/sp-collection/icons/conversion_efficiency.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px]"
+                                src="/img/sp-collection/icons/conversion_efficiency.svg"
+                                alt=""
+                            />
                             <p class="text-20 leading-30 lg:text-base font-normal text-center">24.3% <br/> conversion eff</p>
                         </dd>
                     </dl>
                     <p class="w-full lg:w-[800px] text-left lg:text-center text-sm lg:text-base opacity-0 translate-y-[20px] transition-all duration-700" data-blur-show-text>Monocrystalline solar cells material and 40-year history of IBC solar technology makes the solar conversion efficiency reaches 24.3%, as the top on the market. And the solar energy output stay stable and high effience in high temperature and weak light environments.</p>
                 </div>
-                <div class="w-full lg:max-h-[890px] rounded-[25px] overflow-hidden relative z-[1]">
-                    <div
-                        class="absolute left-0 top-0 right-0 bottom-0 bg-white opacity-0 transition-all duration-700 z-[2]"
-                        data-blur-mask
-                    ></div>
+                <div class="w-full overflow-hidden relative z-[1]">
+                    <div class="sp-collection-blur-mask bg-white" data-blur-mask></div>
                     <img
-                        class="hidden lg:block w-full lg:max-h-[890px] object-cover transition-all duration-700"
+                        class="hidden lg:block w-full h-[46.35416666666667vw] max-w-[1200px] max-h-[890px] aspect-w-[1200px] aspect-h-[890px] object-cover rounded-[30px] transition-all duration-700"
                         src="/img/sp-collection/advantages/1_pc.png"
                         alt=""
                         data-blur-img
                     />
                     <img
-                        class="block lg:hidden w-full lg:max-h-[890px] object-cover transition-all duration-700"
+                        class="block lg:hidden w-full h-[142.66666666666666vmin] object-cover rounded-30 transition-all duration-700"
                         src="/img/sp-collection/advantages/1_mb.png"
                         alt=""
                         data-blur-img
                     />
                 </div>
-                <button
-                    class="w-66 h-66 lg:w-[55px] lg:h-[55px] rounded-full bg-primary absolute right-40 bottom-40 lg:right-[50px] lg:bottom-[32px] z-[2]"
-                    data-blur-btn
-                ></button>
+                <button class="sp-collection-blur-btn" data-blur-btn></button>
             </li>
             <li class="w-full col-span-6 relative">
                 <div class="w-full lg:max-w-[500px] px-60 lg:px-0 flex items-start flex-col absolute left-0 top-108 lg:left-[50px] lg:top-[83px] text-black z-[2]">
                     <h3 class="text-xl font-semibold">Easy to use and <br/> portable</h3>
                     <dl class="flex gap-80 lg:gap-[44px] my-50 lg:my-[50px]">
                         <dd class="flex-center flex-col">
-                            <div class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px] overflow-hidden">
-                                <img
-                                    class="w-full h-full relative -left-[13.3333333333333vw] drop-shadow-[13.3333333333333vw_0_rgba(0,0,0,1)] lg:-left-[100px] lg:drop-shadow-[100px_0_rgba(0,0,0,1)]"
-                                    src="/img/sp-collection/icons/Built_Fastest.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px]"
+                                src="/img/sp-collection/icons/Built_Fastest.svg"
+                                alt=""
+                            />
                             <p class="text-20 leading-30 lg:text-base font-normal text-center">Built <br/> Fastest</p>
                         </dd>
                         <dd class="flex-center flex-col">
-                            <div class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px] overflow-hidden">
-                                <img
-                                    class="w-full h-full relative -left-[13.3333333333333vw] drop-shadow-[13.3333333333333vw_0_rgba(0,0,0,1)] lg:-left-[100px] lg:drop-shadow-[100px_0_rgba(0,0,0,1)]"
-                                    src="/img/sp-collection/icons/Fodable&Portable.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px]"
+                                src="/img/sp-collection/icons/Fodable&Portable.svg"
+                                alt=""
+                            />
                             <p class="text-20 leading-30 lg:text-base font-normal text-center">Portable & <br/> Foldable</p>
                         </dd>
                     </dl>
                     <p class="text-sm lg:text-base opacity-0 translate-y-[20px] transition-all duration-700" data-blur-show-text>The solar power generation system can be built within 60 seconds at the fastest. Compared with the traditional gasonline generator, it is simpler, environmentally friendly and pollution-free. The foldable design and ergonomic handle make it easy to carry and transport.</p>
                 </div>
-                <div class="w-full lg:max-h-[890px] rounded-[25px] overflow-hidden relative z-[1]">
-                    <div
-                        class="absolute left-0 top-0 right-0 bottom-0 bg-white opacity-0 transition-all duration-700 z-[2]"
-                        data-blur-mask
-                    ></div>
+                <div class="w-full overflow-hidden relative z-[1]">
+                    <div class="sp-collection-blur-mask bg-white" data-blur-mask></div>
                     <img
-                        class="hidden lg:block w-full lg:max-h-[890px] object-cover transition-all duration-700"
+                        class="hidden lg:block w-full h-[46.35416666666667vw] max-w-[580px] max-h-[890px] aspect-w-[580px] aspect-h-[890px] object-cover rounded-[30px] transition-all duration-700"
                         src="/img/sp-collection/advantages/2_pc.png"
                         alt=""
                         data-blur-img
                     />
                     <img
-                        class="block lg:hidden w-full lg:max-h-[890px] object-cover transition-all duration-700"
+                        class="block lg:hidden w-full h-[142.66666666666666vmin] object-cover rounded-30 transition-all duration-700"
                         src="/img/sp-collection/advantages/2_mb.png"
                         alt=""
                         data-blur-img
                     />
                 </div>
-                <button
-                    class="w-66 h-66 lg:w-[55px] lg:h-[55px] rounded-full bg-primary absolute right-40 bottom-40 lg:right-[50px] lg:bottom-[32px] z-[2]"
-                    data-blur-btn
-                ></button>
+                <button class="sp-collection-blur-btn" data-blur-btn></button>
             </li>
             <li class="w-full col-span-6 relative">
                 <div class="w-full lg:max-w-[500px] px-60 lg:px-0 flex items-start flex-col absolute left-0 top-108 lg:left-[50px] lg:top-[83px] text-white z-[2]">
                     <h3 class="text-xl font-semibold">Durable for any <br/> enviornment</h3>
                     <dl class="flex gap-80 lg:gap-[44px] my-50 lg:my-[50px]">
                         <dd class="flex-center flex-col">
-                            <div class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px] overflow-hidden">
-                                <img
-                                    class="w-full h-full relative -left-[13.3333333333333vw] drop-shadow-[13.3333333333333vw_0_rgba(255,255,255,1)] lg:-left-[100px] lg:drop-shadow-[100px_0_rgba(255,255,255,1)]"
-                                    src="/img/sp-collection/icons/-10-65°C_Temperature.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px]"
+                                src="/img/sp-collection/icons/-10-65°C_Temperature.svg"
+                                alt=""
+                            />
                             <p class="text-20 leading-30 lg:text-base font-normal text-center">-10~65°C <br/> Temperature</p>
                         </dd>
                         <dd class="flex-center flex-col">
-                            <div class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px] overflow-hidden">
-                                <img
-                                    class="w-full h-full relative -left-[13.3333333333333vw] drop-shadow-[13.3333333333333vw_0_rgba(255,255,255,1)] lg:-left-[100px] lg:drop-shadow-[100px_0_rgba(255,255,255,1)]"
-                                    src="/img/sp-collection/icons/Waterproof.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-100 h-100 lg:w-[100px] lg:h-[100px] mb-[12px]"
+                                src="/img/sp-collection/icons/Waterproof.svg"
+                                alt=""
+                            />
                             <p class="text-20 leading-30 lg:text-base font-normal text-center">IP65 - IP68 <br/> Waterpro</p>
                         </dd>
                     </dl>
                     <p class="text-sm lg:text-base opacity-0 translate-y-[20px] transition-all duration-700" data-blur-show-text>The ETFE-laminated design makes it extreme temperature and corrosion resistance, reaching the working temperature range of -10~65°C(14-149°F). The battery grid is designed on the back for lower battery crack and longer using life. Up to IP68 waterproof, makes it possible to camp in the rain.</p>
                 </div>
-                <div class="w-full lg:max-h-[890px] rounded-[25px] overflow-hidden relative z-[1]">
-                    <div
-                        class="absolute left-0 top-0 right-0 bottom-0 bg-black opacity-0 transition-all duration-700 z-[2]"
-                        data-blur-mask
-                    ></div>
+                <div class="w-full overflow-hidden relative z-[1]">
+                    <div class="sp-collection-blur-mask bg-black" data-blur-mask></div>
                     <img
-                        class="hidden lg:block w-full lg:max-h-[890px] object-cover transition-all duration-700"
+                        class="hidden lg:block w-full h-[46.35416666666667vw] max-w-[580px] max-h-[890px] aspect-w-[580px] aspect-h-[890px] object-cover rounded-[30px] transition-all duration-700"
                         src="/img/sp-collection/advantages/3_pc.png"
                         alt=""
                         data-blur-img
                     />
                     <img
-                        class="block lg:hidden w-full lg:max-h-[890px] object-cover transition-all duration-700"
+                        class="block lg:hidden w-full h-[142.66666666666666vmin] object-cover rounded-30 transition-all duration-700"
                         src="/img/sp-collection/advantages/3_mb.png"
                         alt=""
                         data-blur-img
                     />
                 </div>
-                <button
-                    class="w-66 h-66 lg:w-[55px] lg:h-[55px] rounded-full bg-primary absolute right-40 bottom-40 lg:right-[50px] lg:bottom-[32px] z-[2]"
-                    data-blur-btn
-                ></button>
+                <button class="sp-collection-blur-btn" data-blur-btn></button>
             </li>
             <li class="w-full col-span-6 relative">
                 <div class="w-full lg:max-w-[500px] px-60 lg:px-0 flex items-start flex-col absolute left-0 top-108 lg:left-[50px] lg:top-[83px]">
                     <h3 class="text-xl text-black font-semibold">Universal <br/> Solar Pane</h3>
                     <p class="text-20 leading-30 lg:text-base font-normal text-main mt-[16px]">Industry-standard so Industry-standard so Industry-standard so Industry-standard so</p>
                 </div>
-                <img class="hidden lg:block w-full lg:max-h-[890px] object-cover" src="/img/sp-collection/advantages/4_pc.png" alt="" />
-                <img class="block lg:hidden w-full lg:max-h-[890px] object-cover" src="/img/sp-collection/advantages/4_mb.png" alt="" />
+                <img
+                    class="hidden lg:block w-full h-[46.35416666666667vw] max-w-[580px] max-h-[890px] aspect-w-[580px] aspect-h-[890px] object-cover rounded-[30px]"
+                    src="/img/sp-collection/advantages/4_pc.png"
+                    alt=""
+                />
+                <img
+                    class="block lg:hidden w-full h-[142.66666666666666vmin] object-cover rounded-30"
+                    src="/img/sp-collection/advantages/4_mb.png"
+                    alt=""
+                />
             </li>
             <li class="w-full col-span-6 relative">
                 <div class="w-full lg:max-w-[500px] px-60 lg:px-0 flex items-start  flex-col absolute left-0 top-108 lg:left-[50px] lg:top-[83px]">
                     <h3 class="text-xl text-black font-semibold">Solar Energy <br/> The Future of Energy</h3>
                     <p class="text-20 leading-30 lg:text-base font-normal text-main mt-[16px]">Industry-standard so Industry-standard so Industry-standard so Industry-standard so</p>
                 </div>
-                <img class="hidden lg:block w-full lg:max-h-[890px] object-cover" src="/img/sp-collection/advantages/5_pc.png" alt="" />
-                <img class="block lg:hidden w-full lg:max-h-[890px] object-cover" src="/img/sp-collection/advantages/5_mb.png" alt="" />
+                <img
+                    class="hidden lg:block w-full h-[46.35416666666667vw] max-w-[580px] max-h-[890px] aspect-w-[580px] aspect-h-[890px] object-cover rounded-[30px]"
+                    src="/img/sp-collection/advantages/5_pc.png"
+                    alt=""
+                />
+                <img
+                    class="block lg:hidden w-full h-[142.66666666666666vmin] object-cover rounded-30"
+                    src="/img/sp-collection/advantages/5_mb.png"
+                    alt=""
+                />
             </li>
         </ul>
     </div>
@@ -295,43 +280,35 @@
                     <p class="text-24 leading-36 lg:text-sm text-center lg:text-left text-main font-medium mb-40 lg:mb-[35px]">Durable and long lasting solar panels to convert sunlight to energy quickly</p>
                     <dl class="grid grid-cols-4 items-start gap-0 lg:gap-[25px] mb-15 lg:mb-[15px]">
                         <dd class="flex items-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/conversion_efficiency.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/conversion_efficiency.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">24.3%<br/>Conversion Efficiency</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/-10-65°C_Temperature.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/-10-65°C_Temperature.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">-10~65°C<br/>Temperature</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/Fodable&Portable.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/Fodable&Portable.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">Portable &<br/>Foldable</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/Waterproof.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/Waterproof.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">IP68<br/>Waterproof</span>
                         </dd>
                     </dl>
@@ -354,43 +331,35 @@
                     <p class="text-24 leading-36 lg:text-sm text-center lg:text-left text-main font-medium mb-40 lg:mb-[35px]">Durable and long lasting solar panels to convert sunlight to energy quickly</p>
                     <dl class="grid grid-cols-4 items-start gap-0 lg:gap-[25px] mb-15 lg:mb-[15px]">
                         <dd class="flex items-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/conversion_efficiency.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/conversion_efficiency.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">24.3%<br/>Conversion Efficiency</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/-10-65°C_Temperature.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/-10-65°C_Temperature.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">-10~65°C<br/>Temperature</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/USB_Outputs.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/USB_Outputs.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">2 USB<br/>Outputs</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/Waterproof.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/Waterproof.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">IP68<br/>Waterproof</span>
                         </dd>
                     </dl>
@@ -413,43 +382,35 @@
                     <p class="text-24 leading-36 lg:text-sm text-center lg:text-left text-main font-medium mb-40 lg:mb-[35px]">Durable and long lasting solar panels to convert sunlight to energy quickly</p>
                     <dl class="grid grid-cols-4 items-start gap-0 lg:gap-[25px] mb-15 lg:mb-[15px]">
                         <dd class="flex items-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/conversion_efficiency.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/conversion_efficiency.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">24.3%<br/>Conversion Efficiency</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/-10-65°C_Temperature.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/-10-65°C_Temperature.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">-10~65°C<br/>Temperature</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/Dual-Sided_Panels.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/Dual-Sided_Panels.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">Dual-Sided<br/>Panels</span>
                         </dd>
                         <dd class="flex-center flex-col lg:max-w-[120px]">
-                            <div class="w-80 h-80 lg:w-[80px] lg:h-[80px] overflow-hidden">
-                                <img
-                                    class="w-full h-full object-cover relative -left-[10.666666666666666vw] drop-shadow-[10.666666666666666vw_0_rgba(255,80,1,1)] lg:-left-[80px] lg:drop-shadow-[80px_0_rgba(255,80,1,1)]"
-                                    src="/img/sp-collection/icons/Waterproof.svg"
-                                    alt=""
-                                />
-                            </div>
+                            <img
+                                class="w-80 h-80 lg:w-[80px] lg:h-[80px] object-cover"
+                                src="/img/sp-collection/icons/Waterproof.svg"
+                                alt=""
+                            />
                             <span class="text-center text-20 leading-30 scale-[0.83] lg:scale-1 lg:text-[20px] lg:leading-[30px] text-main font-normal mt-10 lg:mt-[15px]">IP68<br/>Waterproof</span>
                         </dd>
                     </dl>
@@ -565,7 +526,7 @@
             <li class="flex-center flex-col px-30 py-45 lg:p-[45px] bg-white">
                 <img
                     class="w-200 h-[20vmin] lg:w-[400px] lg:h-[250px] object-cover mb-10 lg:mb-[10px]"
-                    src="/img/sp-collection/help-choose/PR-1.png"
+                    src=""
                     alt=""
                 />
                 <h3 class="text-26 leading-39 lg:text-lg text-black font-medium mb-30 lg:mb-[30px] text-center">SolarSaga 200W Solar</h3>
@@ -574,7 +535,7 @@
             <li class="flex-center flex-col px-30 py-45 lg:p-[45px] bg-white">
                 <img
                     class="w-200 h-[20vmin] lg:w-[400px] lg:h-[250px] object-cover mb-10 lg:mb-[10px]"
-                    src="/img/sp-collection/help-choose/PR-2.png"
+                    src=""
                     alt=""
                 />
                 <h3 class="text-26 leading-39 lg:text-lg text-black font-medium mb-30 lg:mb-[30px] text-center">Explorer 2000 Pro + SolarSaga 200W</h3>
@@ -597,7 +558,7 @@
                     <a href="" class="sp-collection-btn-fill">PRODUCT COMPARE</a>
                 </div>
             </li>
-            <li class="bg-f5">
+            <li class="bg-f5 ">
                 <div class="w-full pr-60 lg:pr-[60px]">
                     <img class="block lg:hidden w-full object-cover" src="/img/sp-collection/help_choose_mb.png" alt="">
                     <img class="hidden lg:block w-full object-cover" src="/img/sp-collection/help_choose_pc.png" alt="">
@@ -621,7 +582,7 @@
                     <p class="text-26 leading-39 lg:text-xs font-light text-center mb-45 lg:mb-[20px]">Provide you with the best outdoor green power solutions.</p>
                     <a class="sp-collection-btn-small" href="">LEARN MORE</a>
                 </div>
-                <img class="w-full h-[155vmin] lg:h-[557px] object-cover" src="/img/sp-collection/learn-more/SG_pc.png" alt="">
+                <img class="w-full h-[155vmin] lg:h-[557px] object-cover" src="" alt="">
             </li>
             <li class="relative px-25 lg:px-0">
                 <div class="w-full flex-center flex-col text-black absolute left-1/2 -translate-x-1/2 top-100 lg:top-[56px] px-75 lg:px-[50px]">
@@ -629,7 +590,7 @@
                     <p class="text-26 leading-39 lg:text-xs font-light text-center mb-45 lg:mb-[20px]">Power any type of electronic devces or appliances with excellent performance.</p>
                     <a class="sp-collection-btn-small" href="">LEARN MORE</a>
                 </div>
-                <img class="w-full h-[155vmin] lg:h-[557px] object-cover" src="/img/sp-collection/learn-more/PPS_pc.png" alt="">
+                <img class="w-full h-[155vmin] lg:h-[557px] object-cover" src="" alt="">
             </li>
             <li class="relative px-25 lg:px-0">
                 <div class="w-full flex-center flex-col text-black absolute left-1/2 -translate-x-1/2 top-100 lg:top-[56px] px-75 lg:px-[50px]">
@@ -637,7 +598,7 @@
                     <p class="text-26 leading-39 lg:text-xs font-light text-center mb-45 lg:mb-[20px]">Adapters, cables, connectors, bags, all the jackery accessories you want are here!</p>
                     <a class="sp-collection-btn-small" href="">LEARN MORE</a>
                 </div>
-                <img class="w-full h-[155vmin] lg:h-[557px] object-cover" src="/img/sp-collection/learn-more/JA_pc.png" alt="">
+                <img class="w-full h-[155vmin] lg:h-[557px] object-cover" src="" alt="">
             </li>
         </ul>
     </div>

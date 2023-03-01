@@ -1,5 +1,4 @@
 // 必须得将 css 文件引入进来，这样才能打包进去
-import '../../common.css'
 import './index.css'
 
 class PPSCollection {
@@ -11,10 +10,11 @@ class PPSCollection {
     }
     init() {
         new Swiper(this.swiperContainer1, {
-            slidesPerView: 3.3,
-            spaceBetween: 18,
-            speed: 10000, //滚动速度
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+            speed: 30000, //滚动速度
             freeMode: true,
+            centeredSlides: true,
             loop: true,
             autoplay: {
                 delay: 0,
@@ -23,19 +23,12 @@ class PPSCollection {
             },
         })
 
-        // $(this.swiperContainer1).on('mouseenter', function(e){
-        //     mySwiper.stopAutoplay();
-        // })
-        // $(this.swiperContainer1).on('mouseleave', function(e){      
-        //     mySwiper.startAutoplay();
-        // });
-
-
         new Swiper(this.swiperContainer2, {
-            slidesPerView: 3.3,
-            spaceBetween: 18,
-            speed: 10000, //滚动速度
+            slidesPerView: 'auto',
+            spaceBetween: 8,
+            speed: 30000, //滚动速度
             freeMode: true,
+            centeredSlides: true,
             loop: true,
             autoplay: {
                 delay: 0,
@@ -49,7 +42,7 @@ class PPSCollection {
 
 document.addEventListener("DOMContentLoaded", () => {
     new PPSCollection({
-        swiperContainer1: '.swiper-work1',
-        swiperContainer2: '.swiper-work2',
+        swiperContainer1: '.swiper-explore-1',
+        swiperContainer2: '.swiper-explore-2',
     });
 })

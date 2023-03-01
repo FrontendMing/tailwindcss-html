@@ -1,5 +1,4 @@
 // 必须得将 css 文件引入进来，这样才能打包进去
-import '../../base.css'
 import './index.css'
 
 class SPCollection {
@@ -32,10 +31,10 @@ class SPCollection {
             pagination: {
                 el: this.swiperPagination,
                 clickable: true,
-                bulletClass: 'swiper-work-pagination-item',
-                bulletActiveClass: 'active swiper-work-pagination-item-active',
-                clickableClass: 'swiper-work-pagination-clickable',
-                modifierClass: 'swiper-work-pagination-',
+                bulletClass: 'swiper-sp-work-pagination-item',
+                bulletActiveClass: 'active swiper-sp-work-pagination-item-active',
+                clickableClass: 'swiper-sp-work-pagination-clickable',
+                modifierClass: 'swiper-sp-work-pagination-',
                 renderBullet: function (index, className) {
                     const workDOM = document.querySelector('[data-work]')
                     const workArray = workDOM.dataset.work.split(',')
@@ -101,8 +100,8 @@ class SPCollection {
 
 document.addEventListener("DOMContentLoaded", () => {
     new SPCollection({
-        swiperContainer: '.swiper-work',
-        swiperPagination: '.swiper-work-pagination',
+        swiperContainer: '.swiper-sp-work',
+        swiperPagination: '.swiper-sp-work-pagination',
     });
 })
 

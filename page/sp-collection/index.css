@@ -1,17 +1,6 @@
 @import url(../../common.css);
 
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-.swiper-slide {
-    text-align: center;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.swiper-work-pagination {
+.swiper-sp-work-pagination {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +10,7 @@
     transform: translateX(-50%);
     z-index: 10;
 }
-.swiper-work-pagination::after{
+.swiper-sp-work-pagination::after{
     display: block;
     content: '';
     position: absolute;
@@ -32,14 +21,14 @@
     background-color: #C2C2C2;
     z-index: 0;
 }
-.swiper-work-pagination-item {
+.swiper-sp-work-pagination-item {
     width: 240PX;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.swiper-work-pagination-item > span:first-of-type {
+.swiper-sp-work-pagination-item > span:first-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +45,7 @@
     z-index: 1;
     transition: all .7s;
 }
-.swiper-work-pagination-item > span:last-of-type {
+.swiper-sp-work-pagination-item > span:last-of-type {
     height: 36PX;
     color: white;
     font-size: 18PX;
@@ -65,46 +54,46 @@
     cursor: pointer;
     transition: all .3s;
 }
-.swiper-work-pagination-item-active > span:first-of-type {
+.swiper-sp-work-pagination-item-active > span:first-of-type {
     color: white;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
-.swiper-work-pagination-item-active > span:last-of-type {
+.swiper-sp-work-pagination-item-active > span:last-of-type {
     font-weight: 500;
     font-size: 26PX;
     line-height: 36PX;
 }
 
 @media screen and (max-width: 768px) {
-    .swiper-work-pagination {
+    .swiper-sp-work-pagination {
         bottom: 6.8vmin;
     }
-    .swiper-work-pagination::after {
+    .swiper-sp-work-pagination::after {
         left: 12.5vw;
         top: 2.2vw;
         width: 55vw;
         height: 0.4vw;
     }
-    .swiper-work-pagination-item {
+    .swiper-sp-work-pagination-item {
         width: 25vw;
     }
-    .swiper-work-pagination-item:nth-of-type(3) {
+    .swiper-sp-work-pagination-item:nth-of-type(3) {
         width: 35vw;
     }
-    .swiper-work-pagination-item > span:first-of-type {
+    .swiper-sp-work-pagination-item > span:first-of-type {
         width: 4.266666666666667vw;
         height: 4.266666666666667vw;
         border-width: 0.26666666666666666vw;
         font-size: 3.466666666666667vw;
         line-height: 4vw;
     }
-    .swiper-work-pagination-item > span:last-of-type {
+    .swiper-sp-work-pagination-item > span:last-of-type {
         height: 4.8vw;
         font-size: 2.4vw;
         line-height: 4.8vw;
     }
-    .swiper-work-pagination-item-active > span:last-of-type {
+    .swiper-sp-work-pagination-item-active > span:last-of-type {
         font-size: 3.466666666666667vw;
         line-height: 4.8vw;
     }
@@ -118,11 +107,20 @@
           after:block after:w-full after:h-[3px] after:absolute after:left-0 after:bottom-0
           group-[.active]:text-black lg:group-[.active]:text-main
           lg:group-[.active]:font-medium after:group-[.active]:bg-primary
-      }
+    }
     .sp-collection-title {
         @apply
             w-full max-w-[1200px] mx-auto text-center px-50 pb-60 lg:px-0 lg:pb-[70px]
             font-semibold text-black text-2xl
+    }
+    .sp-collection-blur-mask {
+        @apply
+            absolute left-0 top-0 right-0 bottom-0 opacity-0 transition-all duration-700 z-[2]
+    }
+    .sp-collection-blur-btn {
+        @apply
+            w-66 h-66 lg:w-[55px] lg:h-[55px] rounded-full bg-primary
+            absolute right-40 bottom-40 lg:right-[50px] lg:bottom-[32px] z-[2]
     }
     .sp-collection-btn-small {
         @apply
